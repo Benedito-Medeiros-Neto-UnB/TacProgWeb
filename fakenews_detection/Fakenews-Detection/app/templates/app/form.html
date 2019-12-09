@@ -1,0 +1,12 @@
+{% extends 'app/base.html' %}
+
+{% block content %}
+    <h1 style=" text-align: center;">Digite abaixo a notícia para ser checada</h1>
+    <div class="jumbotron">
+        <form class="form-group" method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Checar">
+        </form>
+    </div>
+{% endblock %}
