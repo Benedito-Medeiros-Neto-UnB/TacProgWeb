@@ -1,0 +1,89 @@
+.back_img {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    height: 30vw;
+}
+
+.header{
+    padding: 1vw;
+    width: 100vw;
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index:10
+}
+
+.logo {
+    width: 14vw;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.navbar-n {
+    display: flex;
+    height: 4vh;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navheader {
+    padding: 0 1rem;
+}
+
+.nav-link {
+    color: rgb(138, 135, 135);
+}
+
+.nav-link:hover {
+    color: white;
+    transition: all 0.25s ease 0s;
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.post {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #6c757d !important;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2vw;
+    overflow: hidden;
+    margin-bottom: 2vw;
+}
+
+.post_title1 {
+    color: rgb(148, 40, 50);
+}
+
+.post_title2 {
+    color: rgb(33, 150, 83);
+}
+
+.image_link {
+    color: rgb(72, 83, 240);
+}
+
+.content_body {
+    color: black;
+}
+
+#mais {
+    color: rgb(138, 135, 135);
+}
+
+#mais:hover {
+    font-weight: bold;
+}
+
+.footer_author {
+    color: rgb(138, 135, 135);
+}
+
+

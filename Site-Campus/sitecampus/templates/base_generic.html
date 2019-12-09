@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% block title %}<title>Site Campus</title>{% endblock %}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Add additional CSS in static file -->
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body>
+    <div class="fluid-container">
+        {% load static %}
+        <div class="row header" style="background-color: rgb(26, 27, 28);">
+            <div class='logo'>
+                {% load static %}
+                <img src='{% static 'images/logo.svg' %}' alt="logo"/>
+            </div>
+            <div class="row navbar-n" style="padding-bottom: 5vh;">
+                {% block sidebar %}
+                <nav class="navbar navheader" >
+                    <a class='nav-link' style="padding-top: 0.5vh;" role="button" href="{% url 'index' %}">Home</a>
+                    <a class='nav-link' style="padding-top: 0.5vh;" href="">Posts</a>
+                    <a class='nav-link' style="padding-top: 0.5vh;" href="">News</a>
+                </nav>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+    <div class="back_img">
+        {% load static %}
+        <img class="back_img" src='{% static 'images/images.jpg' %}' alt="background_image"/>
+    </div>
+   <div class="col-sm-12 content">{% block content %}{% endblock %}</div>
+</body>
+<footer></footer>
+</html>
