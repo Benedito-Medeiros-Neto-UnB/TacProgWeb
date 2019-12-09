@@ -1,0 +1,47 @@
+{% extends 'app/base.html' %} {% block content %}
+<h1 style=" text-align: center;">
+  Análise da notícia enviada
+</h1>
+
+<div class="jumbotron">
+  {% if news.predicao >= 0.0 and news.predicao < 0.3 %}
+  <div class="alert alert-success">
+    <h4 style=" text-align: center;"><b>Verdadeira</b></h4>
+    <p style=" text-align: center;">
+      <span class="badge badge-secondary">
+        Chance de ser fake: {{value}}%
+      </span>
+    </p>
+  </div>
+  {% elif news.predicao >= 0.3 and news.predicao < 0.7 %}
+  <div class="alert alert-warning">
+    <h4 style=" text-align: center;">Inconclusivo</h4>
+    <p style=" text-align: center;">
+      <span class="badge badge-secondary">
+        Chance de ser fake: {{value}}%
+      </span>
+    </p>
+  </div>
+  {% elif news.predicao >= 0.7 and news.predicao < 1.0 %}
+  <div class="alert alert-danger">
+    <h4 style=" text-align: center;">FAKE</h4>
+    <p style=" text-align: center;">
+      <span class="badge badge-secondary">
+        Chance de ser fake: {{value}}%
+      </span>
+    </p>
+  </div>
+  {% endif %}
+  <h2 style=" text-align: center;">
+    <a href="{{ news.url }}">{{ news.titulo }}</a>
+  </h2>
+  <br />
+  <p>
+    {{ news.texto }}
+  </p>
+  <hr class="my-4" />
+  <br />
+  <a href="/" class="btn btn-primary">Voltar</a>
+</div>
+
+{% endblock %}
