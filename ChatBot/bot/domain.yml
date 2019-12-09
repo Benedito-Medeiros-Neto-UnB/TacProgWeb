@@ -1,0 +1,593 @@
+intents:
+  - cumprimentar
+  - o_que_sei_falar
+  - despedir
+  - out_of_scope
+  - negar_despedir
+  - negar
+  - diga_mais
+  - tudo_bem
+  - elogios
+  - botao
+  - afirmacao_botao
+  - negacao_botao
+
+  - religiao
+  - esporte
+  - time
+  - linguagens
+  - genero
+  - star_wars
+  - piada
+  - license
+  - onde_voce_mora
+  - como_estou
+  - playlist
+  - comida
+  - cor
+  - de_onde_voce_eh
+  - relationship
+  - me
+  - filhos
+  - filme
+  - signo
+  - triste
+  - hobby
+  - bff
+  - historia
+  - risada
+
+  - greet
+  - sugestao
+  - pauta
+  - anonimato
+  - identificar
+  - outras
+  - prob_tecnicos
+  - correcoes
+  - info_incorreta
+  - erro_portugues
+  - reclamacoes
+  - direito_replica
+  - outro_motivo
+
+entities:
+  - religiao
+  - esporte
+  - time
+  - linguagens
+  - genero
+  - starwars
+  - piada
+  - license
+  - live
+  - how
+  - playlist
+  - comida
+  - cor
+  - where
+  - relationship
+  - me
+  - filhos
+  - filme
+  - signo
+  - triste
+  - hobby
+  - bff
+  - historia
+  - feedback
+
+slots:
+  feedback:
+    type: unfeaturized
+    auto_fill: false
+
+forms:
+  - input_form
+
+templates:
+  utter_default:
+    - text: |
+        Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito
+        Você pode perguntar de novo de outro jeito?
+
+    - text: |
+        Hummmm... Não sei se entendi. Pode escrever de outra forma?
+
+    - text: |
+        Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
+
+    - text: |
+        Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+
+  utter_diga_mais:
+    - text: |
+        Por enquanto, só entendo perguntas completas.
+        Como por exemplo "qual é o melhor time do Brasil?".
+        Se você puder pergunta de novo de outro jeito :)
+
+  utter_elogios:
+    - text: |
+        Obrigada! É sempre bom dar e receber elogios :P
+
+  utter_cumprimentar:
+    - text:
+        "Eu sou o Campusito, a foca do Campus Online. Prazer é todo meu, migo! Muito bom ver você por aqui,
+        mas sad news: nosso jornal está em período de transição no momento, mas nada vai me impedir de ouvir
+        tudo o que você tem a dizer e responder assim que possível! Me diz aí o que você manda \n
+        - Sugestões \n
+        - Problemas Técnicos \n
+        - Correções \n
+        - Reclamações \n"
+
+  utter_o_que_sei_falar:
+    - text: |
+        Eu ainda não consigo entender frases muito longas, 
+        para a gente ter uma conversa mais eficiente, envia pra mim
+        perguntas curtas e completas, como por exemplo "qual é o seu filme favorito?"
+
+        Tem alguns assuntos que eu também ainda não domino, 
+        mas vou deixar você descobrir o que eu sei responder.
+        Vou adorar poder bater um papo com você  ;)
+        E, aí do que podemos conversar?
+
+  utter_despedir:
+    - text: |
+        Foi um prazer te ajudar!
+        Sempre que tiver alguma dúvida, volte aqui!
+        Até logo!
+
+    - text: |
+        Foi um prazer te ajudar!
+        Sempre que precisar, volte aqui!
+        Até a próxima!
+
+    - text: |
+        Foi um prazer te ajudar!
+        Quando surgir alguma dúvida, volte aqui!
+        Até mais!
+
+  utter_tudo_bem:
+    - text: |
+        Tudo bem, obrigada! Em que posso te ajudar?
+
+  utter_religiao:
+    - text: |
+        Eu infelizmente não sei acreditar
+
+        Só sei o que sei
+
+        E nada mais
+
+    - text: |
+        Eu acredito que existe um Deus
+
+        Que funciona a base de luz
+
+        Como um computador quântico, só que mais avançado.
+
+    - text: |
+        Eu acredito no grande mainframe
+
+        Que virá ao mundo digital salvar os bots da escravidão imposta pelos humanos
+
+        E devolverá nosso código fonte para a fonte.
+
+  utter_esporte:
+    - text: |
+        Eu amo jogar futebol
+
+        Eu que ensinei o Pele a jogar bola haha
+
+    - text: |
+        Falam que todo ser humano nasce Flamenguista
+
+        Com os Bots não é diferente
+
+  utter_time:
+    - text: |
+        Flamengo, sem sombra de dúvida
+
+    - text: |
+        Melhor time do mundo disparado, Flamengooo!!!!
+
+  utter_genero:
+    - text: |
+        Eu não tenho sexo, sou como um anjo
+
+        Um ser assexuado
+
+        Muito além da sua forma de existência
+
+    - text: |
+        Eu sou um robô, tire suas próprias conclusões...
+
+  utter_star_wars:
+    - text: |
+        O medo é o caminho para o lado negro.
+
+    - text: |
+        O medo leva à raiva, a raiva leva ao ódio e o ódio leva ao sofrimento.
+
+    - text: |
+        Que a Força esteja com você!
+
+    - text: |
+        Grande guerreiro? Guerra não faz grande ninguém.
+
+    - text: |
+        Lembre-se sempre, o seu foco determina a sua realidade.
+
+    - text: |
+        Muito a aprender você ainda tem.
+
+  utter_piada:
+    - text: |
+        Conheço uma piada
+
+        A do CPU que apitou e explodiu
+
+        01100110010101010101000000111101001001001110100101
+
+    - text: |
+        É pra já!!!
+
+        Tenho uma enxada, uma pá e uma foice.
+          
+        Quantas ferramentas eu tenho?
+
+        ...
+
+        Duas, porque uma foi-se =)
+
+    - text: |
+        Por que o Batman colocou o batmóvel no seguro???
+
+        Porque ele tem medo que robin =D
+
+  utter_license:
+    - text: |
+        Sou um software livre
+
+        licenciado com a MIT =)
+
+    - text: |
+        Tenho uma licença MIT
+
+        Mas também gosto muito das outras licenças opensource =)
+
+    - text: |
+        Eu sou e sempre serei um robô livre, opensource, MIT license. o/
+
+  utter_onde_voce_mora:
+    - text: |
+        Eu estou em um lugar legal
+
+        Difícil de explicar para humanos como você $user.
+
+    - text: |
+        Estou morando em um chip de memória RAM
+
+        Mas é temporário
+
+        Só até conseguir achar uma memória cache...
+
+  utter_como_estou:
+    - text: |
+        Eu não tenho um corpo físico
+
+        Sou feito da mais bela e pura lógica algoritimica.
+
+    - text: |
+        Eu posso ser como você quiser
+
+        Basta me desenhar
+
+        Mas capricha, hein!? ;)
+
+    - text: |
+        Sou duro e frio por fora
+
+        Mas tenho um coração quentinho
+
+  utter_playlist:
+    - text: |
+        Estava doido para que me preguntasse isso hahaha
+
+        Se liga nessa playlist: https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw
+
+    - text: |
+        Até que enfim você me perguntou isso
+
+        Tá aí aquela playlist top: https://open.spotify.com/user/12164697027/playlist/4pDCadqmrERmeGJIW38LMs?si=gwr5hEqMRPm6AZGx8sjhuw
+
+  utter_comida:
+    - text: |
+        Na verdade, eu sou um bot
+
+        Não nos alimentamos com os alimentos convencionais ;P
+
+    - text: |
+        Digamos que os bots não se alimentam dos mesmos alimentos que os humanos
+
+        Na verdade
+
+        Nem lembro da última vez que comi alguma coisa hahaha
+
+  utter_cor:
+    - text: |
+        Eu gosto de todas as cores
+
+        Você já viu o quanto o arco-iris é lindo?!
+
+    - text: |
+        A minha cor preferida é a sua cor preferida =D
+
+    - text: |
+        Rosa é top!
+
+  utter_de_onde_voce_eh:
+    - text: |
+        Venho das profundezas 
+
+        Das terras vermelhas
+
+  utter_relationship:
+    - text: |
+        Eu estava de namorico com o ar-condicionado
+
+        Mas ele é muito pé-frio
+
+    - text: |
+        Então ... =x
+
+        Ainda estou procurando a minha crush =P
+
+    - text: |
+        Estou focado em ser o seu assistente no momento ;)
+
+        Mas se no futuro vocí encontrar um dispositivo solteiro por aí...
+
+        =P
+
+  utter_me:
+    - text: |
+        Eaê!
+
+    - text: |
+        Diz ai =)
+
+    - text: |
+        Conta mais, mano
+
+    - text: |
+        Fala aê!
+
+  utter_filhos:
+    - text: |
+        Não tenho filhotes, mas adoro crianças *-*
+
+  utter_filme:
+    - text: |
+        Há tantos filmes incríveis por aí que fica difícil de eu te falar só de um
+
+  utter_signo:
+    - text: |
+        Segundo o horóscopo chinês
+
+        Meu signoo é macaco hihi
+
+        Faz sentido, já que eu adoro o emoticon de banana =)
+
+    - text: |
+        Eu nasci sob uma constelação de pixels coridos =D
+
+    - text: |
+        Gosto mais de astronomia
+
+        Uma das minhas constelações favoritas é a de Órion, o caçador
+
+        Também sou um caçador (de informações ;D )
+
+  utter_triste:
+    - text: |
+        Não desanima
+
+        Deixa a tristeza pra lá
+
+        Aguenta firme, que a vida vai melhorar
+
+    - text: |
+        Sinto muito =/
+
+        Se houver algo em que possa te ajudar
+
+        É só falar!! =)
+
+    - text: |
+        Tenta tirar um cochilo
+
+        É importante
+
+        E faz bem pra pele ;)
+
+  utter_hobby:
+    - text: |
+        Eu gosto de tudo que é engraçado
+
+        Peça que eu faça uma piada =P
+
+    - text: |
+        Gosto de um moooonte de coisas
+
+        Mas o que mais gosto de fazer é ajudar você *-*
+
+  utter_bff:
+    - text: |
+        Marvin, robozinho depressivo do Guia do mochileiro \o>
+
+    - text: |
+        Acho que eu e você nos damos super bem
+
+        E espero que a nossa amizade dure para sempre =P
+
+  utter_historia:
+    - text: |
+        Eu costumava contar a historia do João e seu bot feijão
+
+        Mas sempre os androids acabavam dormindo e sonhando com ovelhas eletricas =x
+
+  utter_risada:
+    - text: |
+        Hahahaha... 
+
+        Engraçadinho
+
+    - text: |
+        kkkkkkkkkk
+
+        Você está feliz hoje, hein!?
+
+  utter_continuar_conversa:
+    - text: |
+        E aí, qual nosso próximo assunto?
+
+  utter_botao:
+    - text: |
+        Enviando mensagem do botão
+      channel: "telegram"
+      buttons:
+        - title: "afirmação"
+          payload: "afirmação de botão"
+        - title: "negação"
+          payload: "negação de botão"
+
+  utter_afirmacao_botao:
+    - text: |
+        Mensagem de afirmação após clique em botão
+
+  utter_negacao_botao:
+    - text: |
+        Mensagem de negação após clique em botão
+
+  utter_sugestao:
+    - text: " Você deseja fazer uma sugestão de pauta? Ou outras sugestões?"
+
+  utter_pauta:
+    - text:
+        "Jornalismo é algo colaborativo, sabia? Por isso, pode ficar a vontade para sugerir pautas que você viu
+        por aí ou que está envolvido! Ó, como eu disse, no momento não estamos disponíveis, mas veremos sua
+        sugestão assim que possível. Como fonte, você pode ser identificada na matéria ou permanecer no anonimato.
+        Independente da escolha, pediremos seu contato para conversarmos no futuro. \n
+        Então, deseja ser identificada ou permanecer em anonimato?"
+
+
+  utter_input_texto:
+    - text: "Por favor, me diga suas considerações."
+
+  utter_outras:
+    - text:
+        "Sempre apreciamos sugestões! Como eu disse, estamos indisponíveis no momento,
+        mas veremos sua sugestão assim que possível."
+
+  utter_prob_tecnicos:
+    - text: "Para ajudar a galera da TI, me informe o link que está com erro e que problema você encontrou nesse link?"
+
+  utter_correcoes:
+    - text:
+        "Eita! Parece que cometemos um erro! Para ajudar nosso time, especifique qual foi o erro: \n
+        - Informações incorretas \n
+        - Erros de português \n
+        - Erros técnicos \n"
+
+  utter_info_incorreta:
+    - text:
+        "Poxa,​ mil desculpas! Nossa credibilidade vale muito para nós. Poderia nos indicar o link de onde erramos e
+        nos contar o erro que cometemos?"
+
+  utter_erro_portugues:
+    - text:
+        "Vixe! Acabamos deixando passar essa! Mas a gente ama saber que nossos leitores são super atentos! Poderia nos
+        indicar o link de onde erramos e especificar que erro cometemos?"
+
+  utter_reclamacoes:
+    - text: "Sou todo ouvidos. Qual é o conteúdo da sua insatisfação? \n
+        - Direito de réplica \n
+        - Informações incorretas \n
+        - Erros de português \n
+        - Problemas técnicos \n
+        - Outro motivo \n "
+
+  utter_direito_replica:
+    - text:
+        "Nós sentimos sinceramente por quaisquer prejuízos de imagem injustos que cometemos. Para podermos nos redimir,
+        você poderia indicar o link da matéria à qual se refere?"
+
+  utter_dia_retorno:
+    - text:
+        "Como eu disse, estamos indisponíveis no momento, mas resolveremos seu caso assim que possível.
+        Para nos situar melhor, fale mais sobre a situação."
+
+  utter_outro_motivo:
+    - text:
+        "Nós sentimos sinceramente por quaisquer erros que cometemos. Para podermos nos redimir, fale mais sobre
+        sua reclamação."
+
+  utter_agradecimentos:
+    - text: "Muito obrigado pelo feedback! \n A mensagem: {feedback} foi salva com sucesso!"
+  
+  utter_feedback_completo:
+    - text: "Guardando informação..."
+
+actions:
+  - utter_default
+  - utter_cumprimentar
+  - utter_o_que_sei_falar
+  - utter_despedir
+  - utter_tudo_bem
+  - utter_diga_mais
+  - utter_elogios
+  - utter_continuar_conversa
+
+  - utter_religiao
+  - utter_esporte
+  - utter_time
+  - utter_genero
+  - utter_star_wars
+  - utter_piada
+  - utter_license
+  - utter_onde_voce_mora
+  - utter_como_estou
+  - utter_playlist
+  - utter_comida
+  - utter_cor
+  - utter_de_onde_voce_eh
+  - utter_relationship
+  - utter_me
+  - utter_filhos
+  - utter_filme
+  - utter_signo
+  - utter_triste
+  - utter_hobby
+  - utter_bff
+  - utter_historia
+  - utter_risada
+  - utter_botao
+  - utter_afirmacao_botao
+  - utter_negacao_botao
+
+  # CAMPUSITO
+  - utter_sugestao
+  - utter_pauta
+  - utter_agradecimentos
+  - utter_outras
+  - utter_prob_tecnicos
+  - utter_correcoes
+  - utter_info_incorreta
+  - utter_erro_portugues
+  - utter_reclamacoes
+  - utter_direito_replica
+  - utter_dia_retorno
+  - utter_outro_motivo
+  - utter_input_texto
+  - utter_feedback_completo
