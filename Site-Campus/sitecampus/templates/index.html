@@ -1,0 +1,65 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h2>Posts Recentes</h2>
+<div class='row' style="margin-top: 10px;">
+	{% for post in posts.all %}
+	{% if post.estado == "3" %}
+	{% if post.hierarquia == "1" %}
+	<div class="col-lg-6">
+		<div class='shadow-lg card border-primary text-primary post' style="width: 30vw;">
+			<div class='card-header post_title1'>
+				<strong>{{post.titulo}}</strong>
+			</div>
+			<div class='card-body text-secondary'>
+				<small><i>{{post.sutia}}</i></small>
+			</div>
+			<div class='card-image image_link'>
+				<img style="width:25vw;" src={{post.post_image}} alt="imagem vem aqui"/>
+                </div>
+				<div class='card-body content_body'>
+					<!-- <div style="overflow: hidden; height: 18vh; width: 25vw;">
+						<small><b>{{post.conteudo}}</b></small>
+					</div> -->
+					<a id="mais" href='#'>saiba mais</a>
+				</div>
+				<div class='card-footer footer_author'>
+					<small>
+                        autor: {{post.autor}}<br>
+                        semestre: {{post.semestre_publicação}}<br>
+                    </small>
+				</div>
+			</div>
+		</div>
+		{% endif %}
+		<div class="col-lg-6">
+			{% if post.hierarquia == "2" %}
+			<div style="width: 22vw;" class='shadow-lg card border-success text-success post'>
+				<div class='card-header post_title2'>
+					<strong>{{post.titulo}}</strong>
+				</div>
+				<div class='card-body text-secondary'>
+					<small><i>{{post.sutia}}</i></small>
+				</div>
+				<div class='card-image image_link'>
+					<img style="width: 18vw;" src={{post.post_image}} alt="imagem vem aqui"/>
+                    </div>
+					<div class='card-body content_body'>
+						<!-- <div style="overflow: hidden; height: 15vh; width: 18vw;">
+							<small><b>{{post.conteudo}}</b></small> 
+						</div> -->
+						<a id="mais" href='#'>saiba mais</a>
+					</div>
+					<div class='card-footer footer_author'>
+						<small>
+                            autor: {{post.autor}}<br>
+                            semestre: {{post.semestre_publicação}}<br>
+                        </small>
+					</div>
+				</div>
+			</div>
+			{% endif %}
+			{% endif %}
+			{% endfor %}
+		</div>
+		{% endblock %}
