@@ -1,0 +1,21 @@
+[
+    {
+      "model": "auth.group",
+      "pk": 1,
+      "fields": {
+        "name": "Reporter",
+        "permissions": ["campus_app.add_noticia","campus_app.change_noticia",
+                        "campus_app.view_noticia","campus_app.delete_noticia"]
+      }
+    },
+    {
+      "model": "auth.group",
+      "pk": 2,
+      "fields": {
+        "name": "Editor",
+        "permissions": ["auth.view_user","auth.add_user","auth.change_user", 
+          "campus_app.add_noticia","campus_app.change_noticia",
+          "campus_app.view_noticia","campus_app.delete_noticia"]
+      }
+    }
+  ]

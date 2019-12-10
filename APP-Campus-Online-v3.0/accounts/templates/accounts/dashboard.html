@@ -1,0 +1,25 @@
+{% extends "accounts/base_dashboard.html" %}
+
+{% block content %}
+  <div class="news-add">
+    <a class="btn" href="{% url 'home' %}">Home</a>
+    <a class="btn" href="{% url 'dashboard' %}">Meu Painel</a>
+    <a class="btn" href="{% url 'noticia_list' %}">Notícias</a>
+    {% if perms.auth.view_user %}
+      <a class="btn" href="{% url 'users' %}">Usuários</a>
+    {% endif %}
+    <a class="btn" href="{% url 'edit_password' %}">Editar Senha</a>
+  </div>
+  <div style="height: 25px;"></div>
+  <div class="news-add">
+    {% block dashboard_content %}
+      <p><strong>Usuário</strong>: {{ user }}</p>
+      <p><strong>E-mail</strong>: {{ user.email }}</p>
+      <p> <strong> Perfil</strong>: 
+      {% for p in perfil %}
+      {{p.name}} 
+      {% endfor %} </p>
+    {% endblock %}
+  </div>
+  <div style="height: 100px;"></div>
+{% endblock %}

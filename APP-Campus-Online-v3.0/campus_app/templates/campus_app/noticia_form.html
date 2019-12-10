@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="news-add">
+        <p> <a class="btn" href="{% url 'noticia_list' %}">Cancelar</a> </p>
+        <form method="post">
+          {% csrf_token %}
+          <h3>Publicado por</h3>
+          <p>{{ form.cod_usuario }}</p>
+          <h3>Título</h3>
+          <p>{{ form.titulo }}</p>
+          <div class="error">{{ form.titulo.errors }}</div>
+          <h3>Texto</h3>
+          <p>{{ form.texto }}</p>
+          <div class="error">{{ form.texto.errors }}</div>
+          <h3>Prioridade</h3>
+          <p>{{ form.prioridade }}</p>
+          <div class="error">{{ form.prioridade.errors }}</div>
+          <h3>Link externo</h3>
+          <p>{{ form.link_externo }}</p>
+          <div class="error">{{ form.link_externo.errors }}</div>
+          <h3>Link video</h3>
+          <p>{{ form.link_video }}</p>
+          <div class="error">{{ form.link_video.errors }}</div>
+          <h3>Link imagem</h3>
+          <p>{{ form.link_foto }}</p>
+          <div class="error">{{ form.link_foto.errors }}</div>
+          <input class="btn" type="submit" value="Salvar">
+        </form>
+      <div style="height: 100px;"></div>
+    </div>
+{% endblock %}

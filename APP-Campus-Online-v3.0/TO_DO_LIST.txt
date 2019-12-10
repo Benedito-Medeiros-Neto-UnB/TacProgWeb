@@ -1,0 +1,5 @@
+- Corrigir redirecionamento do cadastro de usuário para a página de usuários ao invés de "meu perfil".
+- Corrigir o cadastro do perfil no cadastro de usuário que não está funcionando.
+- Inserir contador de caracteres no campo texto da guia de cadastro de notícia.
+- Inserir o preview em cadastro de notícia.
+- Corrigir redirecionamento do calendário. (Feito)
