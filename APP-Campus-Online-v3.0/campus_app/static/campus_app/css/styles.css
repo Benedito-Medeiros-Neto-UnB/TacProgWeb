@@ -1,0 +1,397 @@
+.app-content {
+    text-align: left;
+    padding-bottom: 0.3em;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: block;
+}
+
+.app {
+ text-align: center;
+ --color-1: #6c0318;
+ --color-2: #b5202e;
+ --color-3: #ff9000;
+ --color-4: #f9c19a;
+}
+.app-header {
+    height: fit-content;
+    width: 100%;
+    background-color: #6c0318;
+    margin-bottom: 10px;
+}
+.app-logo {
+    width: 80%;
+    padding: 15px 0px;
+}
+.app-title {
+    padding-top: 10px;
+    font-weight: bold;
+}
+#calendar-region {
+    display: flex;
+    justify-content: center;
+}
+sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6c0318;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1.5s;
+}
+header {
+    backface-visibility: hidden;
+}
+sidenav p {
+	text-decoration: none;
+    font-size: 20px;
+    color: #e8e8e8;
+    display: block;
+}
+sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 25px;
+}
+sidenav .closebtn:hover {
+	color: #e8e8e8;
+	background-color: #6c0318;
+	box-shadow: 0px 0px 0px;
+}
+sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #de8d2e;
+    display: block;
+	font-weight: lighter;
+	text-align: left;
+	text-indent: 1em;
+}
+sidenav a:hover {
+    color: #f1f1f1;
+}
+.burger {
+    font-size: 30px;
+    cursor: pointer;
+}
+.calendar-button {
+    padding: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+	background-color: white;
+    border: 3px solid #942832;
+    border-radius: 10px;
+    color: #942832;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+.calendar-button:hover {
+    background-color: #942832;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.content {
+    padding-top: 2em;
+}
+.l-box {
+    padding: 1em;
+}
+.header .pure-menu {
+    padding: 0.5em;
+}
+.header .pure-menu li a:hover,
+.header .pure-menu li a:focus {
+    background: none;
+    border: none;
+    color: #aaa;
+}
+body .primary-button {
+    background: #02a6eb;
+    color: #fff;
+}
+.splash {
+    margin: 0 auto;
+    padding: 1.5em 1em 0;
+    background: #eee;
+}
+.splash .splash-head {
+    font-size: 300%;
+    margin: 0em 0;
+    line-height: 1.2em;
+}
+.splash .splash-subhead {
+    color: #999;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+.splash .primary-button {
+    font-size: 150%;
+}
+.content .content-subhead {
+    color: #999;
+    padding-bottom: 0.3em;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 2px solid #eee;
+    display: inline-block;
+}
+.content .content-ribbon {
+    margin: 3em;
+    border-bottom: 1px solid #eee;
+}
+.ribbon {
+    background: #eee;
+    text-align: center;
+    padding: 2em;
+    color: #999;
+}
+.ribbon h2 {
+    display: inline;
+    font-weight: normal;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #6c0318;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+}
+
+/*################################### CSS NEWS ADD ###################################*/
+
+.key-login, .news-add {
+	margin: 10px;
+}
+
+.preview {
+	/* border: 2px solid #000; */
+	margin: 15px -10px 0px -10px;
+	background-color: #6c0318;
+	padding: 15px 10px;
+}
+
+.news-add h3, .key-login h3 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #b5202e;
+	margin-bottom: 5px;
+	text-align: justify;
+	text-align-last: left;
+}
+.upper{
+	text-transform: uppercase;
+}
+.news-add h1 {
+	font-size: 25px;
+	font-weight: bold;
+	color: #b5202e;
+	margin-bottom: 5px;
+}
+
+button, .btn {
+	display: inline-block;
+	border: 3px solid #f9c19a;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 7px;
+	font-weight: bold;
+	color: #6c0318;
+	background-color: white;
+	text-decoration: none;
+	transition-duration: 0.3s;
+    cursor: pointer;
+	font-size: 80%;
+}
+
+button:hover {
+	background-color: #f9c19a;
+}
+
+.btn:hover {
+	background-color: #f9c19a;
+}
+
+.btn-link {
+	color: #6c0318;	
+}
+.btn-link:hover {
+	color: #b5202e;
+}
+#Adicionar:disabled {
+	background-color: white;
+	cursor: not-allowed;
+	color: #6c0318;
+}
+
+#Adicionar:hover {
+	background-color: #f9c19a;
+	cursor: not-allowed;
+}
+
+/*################################### CSS NEWS ITEM ###################################*/
+
+.newsItem {
+	background-color: white;
+	padding: 25px;
+	border-color: #282828;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+}
+
+/* .newsItem:hover {
+	background-color: #eee;
+} */
+p {
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+.upper {
+	text-transform: uppercase;
+}
+.media {
+	height: fit-content;
+	/* max-height: 125px; */
+	background-color: #fff;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.headline {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #942832;
+}
+
+.adtInfo {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.autor {
+	color: #888;
+	font-size: 14px;
+	text-align: left;
+}
+
+.timestamp {
+	color: #5a5a5a;
+	font-size: 12px;
+	min-width: fit-content;
+}
+
+.author {
+	color: #555555;
+	font-size: 15px;
+	min-width: fit-content;
+}
+
+.resumo {
+	text-align: justify;
+	text-align-last: left;
+	line-break: strict;
+	text-indent: 1em;
+}
+
+.texto {
+	text-align: justify;
+	text-align-last: left;
+	line-break: strict;
+	text-indent: 1em;
+}
+
+.link {
+	display: inline-block;
+	border: 3px solid #de8d2e;
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 7px;
+	font-weight: bold;
+	color: #6c0318;
+	text-decoration: none;
+	transition-duration: 0.3s;
+    cursor: pointer;
+	font-size: 80%;
+}
+
+.link:hover {
+	background-color: #de8d2e;
+}
+
+/*################################### CSS NEWS LIST ###################################*/
+
+.newsList .dateDivider {
+	text-align: center;
+    margin: 25px -25px 25px -25px;
+	padding: 10px 0;
+	background-color: #942832;
+	color: white;
+	font-weight: 600;
+	font-size: 1.2em;
+	box-shadow: inset 0 10px 20px -10px #000;
+	z-index: 1;
+}
+
+.newsList span {
+	margin: 70px 35px 0 35px;
+	display: block;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.5em;
+	background-color: #942832;
+	padding: 10px;
+	border-radius: 4px;
+	color: white;
+}
+
+/*################################### CSS MEDIA ###################################*/
+
+.newsImg {
+	width: auto;
+	height: 180px;
+	background-color: #FFFFFF;
+}
+.newsVideo {
+	width: 100%;
+	height: 180px;
+	border: 0 none;
+}
+.newsAudio {
+	width: 100%;
+	height: 180px;
+}
+
+/*################################### CSS TABLES ###################################*/
+
+.table-responsive{
+  width: 100% !important;
+}
+.table {
+  border: 1px solid red;
+  width: 50% !important; /*Importante manter o !important rs */
+  margin: auto;
+}
+.table-status {
+  margin-top: 20px;
+  margin-bottom: 20px !important;
+}

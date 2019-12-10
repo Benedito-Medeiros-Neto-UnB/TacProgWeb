@@ -1,0 +1,46 @@
+{% extends "accounts/dashboard.html" %}
+
+{% block dashboard_content %}
+  <div class="news-add">
+    <h2>Usuários</h2>
+    <p>
+      <a class="btn" href="{% url 'new_user' %}">Novo usuário</a>
+    </p>
+    <div class="container">
+      <table class="table-responsive">
+        <tr>
+          <th>Usuário</th>
+          <th>Primeiro Nome</th>
+          <th>Último Nome</th>
+          <th>Email</th>
+          <th>Ativo</th>
+          <th>Perfil</th>
+          <th> </th>
+        </tr>
+        {% for user in users %}
+          <tr>
+            <td> {{ user }} </td>
+            <td> {{ user.first_name }} </td>
+            <td> {{ user.last_name }} </td>
+            <td> {{ user.email }} </td>
+            {% if user.is_active%}
+              <td>Sim</td>
+            {% else %}
+              <td>Não</td>
+            {% endif %}
+            {% if not user.is_superuser %}
+            {% for p in user.groups.all %}
+                <td> {{p.name}} </td>
+            {% empty %}
+                <td> </td>
+            {% endfor %}
+                <td> <a class="btn-link" href="{% url 'update_user' user.id %}">EDITAR</a> </td>
+            {% else %}
+                <td>Administrador</td>
+           {% endif%}
+          </tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+{% endblock %}
