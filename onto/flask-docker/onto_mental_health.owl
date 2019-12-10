@@ -1,0 +1,824 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://127.0.0.1/onto-mental-health.owl#"
+     xml:base="http://127.0.0.1/onto-mental-health.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://127.0.0.1/onto-mental-health.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#has_author -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/onto-mental-health.owl#has_author">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/onto-mental-health.owl#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#has_date -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/onto-mental-health.owl#has_date">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/onto-mental-health.owl#Date"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#has_image -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/onto-mental-health.owl#has_image">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/onto-mental-health.owl#Theme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#has_instance -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/onto-mental-health.owl#has_instance">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#has_source -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/onto-mental-health.owl#has_source">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/onto_model_source.owl#Source"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#has_theme -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/onto-mental-health.owl#has_theme">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/onto-mental-health.owl#Theme"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#has_url -->
+
+    <owl:ObjectProperty rdf:about="http://127.0.0.1/onto-mental-health.owl#has_url">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto_model_source.owl#RSS"/>
+        <rdfs:range rdf:resource="http://127.0.0.1/onto-mental-health.owl#Url"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#has_theme -->
+
+    <owl:ObjectProperty rdf:about="https://127.0.0.1/onto_aux_finale.owl#has_theme">
+        <rdfs:domain rdf:resource="http://127.0.0.1/onto-mental-health.owl#Theme"/>
+        <rdfs:range rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Article -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto-mental-health.owl#Article">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Author -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto-mental-health.owl#Author">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Date -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto-mental-health.owl#Date">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Image -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto-mental-health.owl#Image">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Theme -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto-mental-health.owl#Theme">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Url -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto-mental-health.owl#Url">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto_model_source.owl#RSS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto_model_source.owl#DSpace -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto_model_source.owl#DSpace">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto_model_source.owl#Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto_model_source.owl#RSS -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto_model_source.owl#RSS">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto_model_source.owl#Source"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto_model_source.owl#Source -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto_model_source.owl#Source">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+    </owl:Class>
+    
+
+
+    <!-- http://127.0.0.1/onto_model_source.owl#Twitter -->
+
+    <owl:Class rdf:about="http://127.0.0.1/onto_model_source.owl#Twitter">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto_model_source.owl#Source"/>
+    </owl:Class>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Mental_Health -->
+
+    <owl:Class rdf:about="https://127.0.0.1/onto_aux_finale.owl#Mental_Health">
+        <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto-mental-health.owl#Theme"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Christian%20Ingo%20Lenz%20Dunker -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/onto-mental-health.owl#Christian%20Ingo%20Lenz%20Dunker">
+        <rdf:type rdf:resource="http://127.0.0.1/onto-mental-health.owl#Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Como%20encontrar%20a%20felicidade%20em%20tempos%20sombrios:%20três%20passos%20para%20olhar%20o%20futuro -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/onto-mental-health.owl#Como%20encontrar%20a%20felicidade%20em%20tempos%20sombrios:%20três%20passos%20para%20olhar%20o%20futuro">
+        <rdf:type rdf:resource="http://127.0.0.1/onto-mental-health.owl#Article"/>
+        <has_author rdf:resource="http://127.0.0.1/onto-mental-health.owl#Christian%20Ingo%20Lenz%20Dunker"/>
+        <has_date rdf:resource="http://127.0.0.1/onto-mental-health.owl#Sat,%2026%20Oct%202019%2003:03:57%20+0000"/>
+        <has_url rdf:resource="http://127.0.0.1/onto-mental-health.owl#https://theintercept.com/2019/10/25/felicidade-tempos-sombrios/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#Sat,%2026%20Oct%202019%2003:03:57%20+0000 -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/onto-mental-health.owl#Sat,%2026%20Oct%202019%2003:03:57%20+0000">
+        <rdf:type rdf:resource="http://127.0.0.1/onto-mental-health.owl#Date"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/onto-mental-health.owl#https://theintercept.com/2019/10/25/felicidade-tempos-sombrios/ -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/onto-mental-health.owl#https://theintercept.com/2019/10/25/felicidade-tempos-sombrios/">
+        <rdf:type rdf:resource="http://127.0.0.1/onto-mental-health.owl#Url"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/onto_model_source.owl#https://diplomatique.org.br/feed/ -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/onto_model_source.owl#https://diplomatique.org.br/feed/">
+        <rdf:type rdf:resource="http://127.0.0.1/onto_model_source.owl#RSS"/>
+        <has_url rdf:resource="http://127.0.0.1/onto_model_source.owl#https://diplomatique.org.br/feed/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/onto_model_source.owl#https://outraspalavras.net/feed/ -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/onto_model_source.owl#https://outraspalavras.net/feed/">
+        <rdf:type rdf:resource="http://127.0.0.1/onto_model_source.owl#RSS"/>
+        <has_url rdf:resource="http://127.0.0.1/onto_model_source.owl#https://outraspalavras.net/feed/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://127.0.0.1/onto_model_source.owl#https://theintercept.com/feed/?lang=pt -->
+
+    <owl:NamedIndividual rdf:about="http://127.0.0.1/onto_model_source.owl#https://theintercept.com/feed/?lang=pt">
+        <rdf:type rdf:resource="http://127.0.0.1/onto_model_source.owl#RSS"/>
+        <has_url rdf:resource="http://127.0.0.1/onto-mental-health.owl#https://theintercept.com/2019/10/25/felicidade-tempos-sombrios/"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Alunos -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Alunos">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Auto-cobrança -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Auto-cobrança">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Autonomia -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Autonomia">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Competitividade -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Competitividade">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Competência -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Competência">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Cultura -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Cultura">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Definição -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Definição">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Depressão -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Depressão">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Esperança -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Esperança">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Espiritual -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Espiritual">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Espiritualidade -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Espiritualidade">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Estigma -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Estigma">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Exposição -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Exposição">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Frustração -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Frustração">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Irritabilidade -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Irritabilidade">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Isolamento -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Isolamento">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Meditação -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Meditação">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Pessoas -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Pessoas">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Privações -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Privações">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Professores -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Professores">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Psicoterapia -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Psicoterapia">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Rejeição -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Rejeição">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Religião -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Religião">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Servidores -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Servidores">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Sintomas -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Sintomas">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Solidariedade -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Solidariedade">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Sono -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Sono">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Suicídio -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Suicídio">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Universidade -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Universidade">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Ajustes%20emocionais -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Ajustes%20emocionais">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Ansiedade%20desordenada -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Ansiedade%20desordenada">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Apoio%20familiar -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Apoio%20familiar">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Aspectos%20psicológicos -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Aspectos%20psicológicos">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Baixa%20autoestima -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Baixa%20autoestima">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Balança%20entre%20vida%20social%20e%20profissional -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Balança%20entre%20vida%20social%20e%20profissional">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Bem-estar%20subjetivo -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Bem-estar%20subjetivo">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Carga%20de%20trabalho -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Carga%20de%20trabalho">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Choro%20frequente -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Choro%20frequente">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Conceitos%20básicos -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Conceitos%20básicos">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Consumo%20de%20drogas -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Consumo%20de%20drogas">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#DAC%20-%20Decanato%20de%20Assuntos%20Comunitários -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#DAC%20-%20Decanato%20de%20Assuntos%20Comunitários">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#DDS%20-%20Diretoria%20de%20Desenvolvimento%20Social -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#DDS%20-%20Diretoria%20de%20Desenvolvimento%20Social">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#DEG%20-%20Decanato%20de%20Ensino%20e%20Graduação -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#DEG%20-%20Decanato%20de%20Ensino%20e%20Graduação">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Dependência%20interna -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Dependência%20interna">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Dependência%20química -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Dependência%20química">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Distúrbios%20do%20sono -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Distúrbios%20do%20sono">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Doença%20mental -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Doença%20mental">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Dores%20físicas -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Dores%20físicas">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Estudos%20sociais -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Estudos%20sociais">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Falta%20de%20incentivo -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Falta%20de%20incentivo">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Falta%20de%20habilidades%20comportamentais -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Falta%20de%20habilidades%20comportamentais">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Indisposição%20para%20atividades%20simples -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Indisposição%20para%20atividades%20simples">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Instabilidade%20contínua -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Instabilidade%20contínua">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Mal-estar%20mental -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Mal-estar%20mental">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Mudanças%20comportamentais%20bruscas -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Mudanças%20comportamentais%20bruscas">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Nepasd%20-%20Pesquisas%20e%20Atendimentos%20em%20Saúde%20Mental%20e%20Drogas -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Nepasd%20-%20Pesquisas%20e%20Atendimentos%20em%20Saúde%20Mental%20e%20Drogas">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Pensamentos%20negativos -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Pensamentos%20negativos">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Perda%20de%20referências -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Perda%20de%20referências">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Perturbação%20mental -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Perturbação%20mental">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Pressão%20social -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Pressão%20social">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Problemas%20familiares -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Problemas%20familiares">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Rede%20de%20apoio -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Rede%20de%20apoio">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#SOU%20-%20Serviço%20de%20Orientação%20ao%20Universitário -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#SOU%20-%20Serviço%20de%20Orientação%20ao%20Universitário">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Subdesenvolvimento%20psicológico -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Subdesenvolvimento%20psicológico">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Terapias%20Expressivas -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Terapias%20Expressivas">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Terapias/Cura -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Terapias/Cura">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Transtorno%20mental -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Transtorno%20mental">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Tristeza%20profunda -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Tristeza%20profunda">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://127.0.0.1/onto_aux_finale.owl#Vida%20equilibrada -->
+
+    <owl:NamedIndividual rdf:about="https://127.0.0.1/onto_aux_finale.owl#Vida%20equilibrada">
+        <rdf:type rdf:resource="https://127.0.0.1/onto_aux_finale.owl#Mental_Health"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

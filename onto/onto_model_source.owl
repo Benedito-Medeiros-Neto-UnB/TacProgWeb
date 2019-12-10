@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://127.0.0.1/onto_model_source.owl"
+         xmlns="http://127.0.0.1/onto_model_source.owl#"
+         xmlns:onto="http://127.0.0.1/onto_model_article.owl#">
+
+<owl:Ontology rdf:about="http://127.0.0.1/onto_model_source.owl"/>
+
+<owl:Class rdf:about="#Source">
+  <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto_model_article.owl#Article"/>
+</owl:Class>
+
+<owl:Class rdf:about="#RSS">
+  <rdfs:subClassOf rdf:resource="#Source"/>
+</owl:Class>
+
+<owl:Class rdf:about="#DSpace">
+  <rdfs:subClassOf rdf:resource="#Source"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Twitter">
+  <rdfs:subClassOf rdf:resource="#Source"/>
+</owl:Class>
+
+<RSS rdf:about="#https://theintercept.com/feed/?lang=pt">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:has_url rdf:resource="http://127.0.0.1/onto_model_article.owl#https://theintercept.com/2019/10/25/felicidade-tempos-sombrios/"/>
+</RSS>
+
+<RSS rdf:about="#https://diplomatique.org.br/feed/">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:has_url rdf:resource="#https://diplomatique.org.br/feed/"/>
+</RSS>
+
+<RSS rdf:about="#https://outraspalavras.net/feed/">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <onto:has_url rdf:resource="#https://outraspalavras.net/feed/"/>
+</RSS>
+
+
+</rdf:RDF>

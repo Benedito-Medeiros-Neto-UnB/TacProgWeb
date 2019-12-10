@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://127.0.0.1/onto_model_article.owl"
+         xmlns="http://127.0.0.1/onto_model_article.owl#">
+
+<owl:Ontology rdf:about="http://127.0.0.1/onto_model_article.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_date">
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="#Date"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_source">
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="http://127.0.0.1/onto_model_source.owl#Source"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_instance">
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="#Article"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_url">
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:domain rdf:resource="http://127.0.0.1/onto_model_source.owl#RSS"/>
+  <rdfs:range rdf:resource="#Url"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_author">
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="#Author"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_theme">
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="#Theme"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#has_image">
+  <rdfs:domain rdf:resource="#Article"/>
+  <rdfs:range rdf:resource="#Theme"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Article">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Url">
+  <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto_model_source.owl#RSS"/>
+  <rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Author">
+  <rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Theme">
+  <rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Date">
+  <rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+
+<owl:Class rdf:about="#Image">
+  <rdfs:subClassOf rdf:resource="#Article"/>
+</owl:Class>
+
+<Article rdf:about="#Como encontrar a felicidade em tempos sombrios: três passos para olhar o futuro">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <has_date rdf:resource="#Sat, 26 Oct 2019 03:03:57 +0000"/>
+  <has_url rdf:resource="#https://theintercept.com/2019/10/25/felicidade-tempos-sombrios"/>
+  <has_author rdf:resource="#Christian Ingo Lenz Dunker"/>
+</Article>
+
+<Author rdf:about="#Christian Ingo Lenz Dunker">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Author>
+
+<Date rdf:about="#Sat, 26 Oct 2019 03:03:57 +0000">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Date>
+
+<Url rdf:about="#https://theintercept.com/2019/10/25/felicidade-tempos-sombrios">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Url>
+
+
+</rdf:RDF>
