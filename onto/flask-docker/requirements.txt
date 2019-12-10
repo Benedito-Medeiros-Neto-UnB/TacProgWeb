@@ -1,0 +1,5 @@
+flask
+flask_restful
+feedparser
+owlready2
+rdflib

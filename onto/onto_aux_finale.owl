@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="https://127.0.0.1/onto_aux_finale.owl"
+         xmlns="https://127.0.0.1/onto_aux_finale.owl#">
+
+<owl:Ontology rdf:about="https://127.0.0.1/onto_aux_finale.owl"/>
+
+<owl:ObjectProperty rdf:about="#has_theme">
+  <rdfs:domain rdf:resource="http://127.0.0.1/onto_model_article.owl#Theme"/>
+  <rdfs:range rdf:resource="#Mental_Health"/>
+</owl:ObjectProperty>
+
+<owl:Class rdf:about="#Mental_Health">
+  <rdfs:subClassOf rdf:resource="http://127.0.0.1/onto_model_article.owl#Theme"/>
+</owl:Class>
+
+<Mental_Health rdf:about="#Doença mental">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Pessoas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Conceitos básicos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Estudos sociais">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Sintomas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Terapias/Cura">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Universidade">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Esperança">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Rede de apoio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Solidariedade">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Meditação">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Apoio familiar">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Terapias Expressivas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Psicoterapia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Espiritual">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Depressão">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Falta de habilidades comportamentais">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Pensamentos negativos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Consumo de drogas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Ansiedade desordenada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Choro frequente">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Dores físicas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Tristeza profunda">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Mudanças comportamentais bruscas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Distúrbios do sono">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Rejeição">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Irritabilidade">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Suicídio">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Baixa autoestima">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Isolamento">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Mal-estar mental">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Professores">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Alunos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Servidores">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Subdesenvolvimento psicológico">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Instabilidade contínua">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Perturbação mental">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Transtorno mental">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#DEG - Decanato de Ensino e Graduação">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Nepasd - Pesquisas e Atendimentos em Saúde Mental e Drogas">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#DAC - Decanato de Assuntos Comunitários">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#DDS - Diretoria de Desenvolvimento Social">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#SOU - Serviço de Orientação ao Universitário">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Espiritualidade">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Indisposição para atividades simples">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Dependência química">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Balança entre vida social e profissional">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Competência">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Bem-estar subjetivo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Privações">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Definição">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Frustração">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Vida equilibrada">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Problemas familiares">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Competitividade">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Exposição">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Carga de trabalho">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Falta de incentivo">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Ajustes emocionais">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Aspectos psicológicos">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Autonomia">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Pressão social">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Sono">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Dependência interna">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Perda de referências">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Auto-cobrança">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Cultura">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Estigma">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+<Mental_Health rdf:about="#Religião">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+</Mental_Health>
+
+
+</rdf:RDF>

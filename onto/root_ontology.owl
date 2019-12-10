@@ -1,0 +1,841 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://webprotege.stanford.edu/project/9Cy8ED6pX1kHnEsinaMjU9#"
+     xml:base="http://webprotege.stanford.edu/project/9Cy8ED6pX1kHnEsinaMjU9"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://webprotege.stanford.edu/project/9Cy8ED6pX1kHnEsinaMjU9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7cdRJ5RXTrbXVaDMpSXc0H -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R7cdRJ5RXTrbXVaDMpSXc0H">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF"/>
+        <rdfs:label xml:lang="pt-br">afeta</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R823NaGJwmQPtPC5N2xw8NU -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R823NaGJwmQPtPC5N2xw8NU">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RBmyRwR87ysMpFnc5mfUfyZ"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w"/>
+        <rdfs:label xml:lang="pt-br">definidasPor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8pxttQKlgv0oicgdDnctJi -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R8pxttQKlgv0oicgdDnctJi">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCiaLsrjSNNudpgZ7vZR6jP"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RZflwQbRzNrwFZ0RH9JzBL"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propriedade que define posse de uma classe relacionada a certa subclasse.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">tem</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9hrA3hrYQ0CBa8nxQpjcO -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9hrA3hrYQ0CBa8nxQpjcO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h"/>
+        <rdfs:label xml:lang="pt-br">vulneraveisA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9lWGKuHWlrEQ4FyFWVztkJ -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9lWGKuHWlrEQ4FyFWVztkJ">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8MroHBmY7z1tlcL5z1afRt"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R907T4OG6aRS4hZM3oEnMMI"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RBfa2njR0brdps7YGYFrgwV"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCOuPXe4i8d8AP9piHDur4h"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCks8RiQtZuY0pvn5JDLK8f"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RDRHooNdSgnTBLEMcJpulv8"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Rdx9Dr5Dlym06zfd7HtBwj"/>
+        <rdfs:label xml:lang="pt-br">atravesDe</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9veudUID7kF9QwjY5PiIwp -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R9veudUID7kF9QwjY5PiIwp">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R8pxttQKlgv0oicgdDnctJi"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">obtém</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBmyRwR87ysMpFnc5mfUfyZ -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBmyRwR87ysMpFnc5mfUfyZ">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propriedade que define que uma classe ocasiona uma subclasse.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">por</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBowm2fk1GmJfwr4KeXJmkS -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBowm2fk1GmJfwr4KeXJmkS">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7bGyQnevNaN7TxB887TpwF"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7zDvUi0T1S5j9To75WxV8N"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9NngjbIZgVhZzHWioLXk1C"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9TLV1n1NJ671aN445l7Ml"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RBGUwj8ZtPm3SJIybVQFIhv"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RBsbihQdGDno2FlUhFXVE12"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCA1jueaEa5xy7Z24XCUOZ8"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCa0j90VpgaVHZxqnb4vq98"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RChNydwvaNuDbGTQiylUOuu"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RDGh4qh9GvZVfrGaKAic4j0"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RDiwuxBgUWt2OvPTRtBbGqr"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/REv1ygBuUfzqwz5FT6tMSE"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RY6mBRgaFqp0wQyeZYFQjR"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RkCbrvsJGk6e063iAiIpRJ"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propriedade que define causa e efeito de uma classe relacionada a certa subclasse.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">provoca</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCh5EerU1V2Kqv6CPe6P9sC -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCh5EerU1V2Kqv6CPe6P9sC">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/RBmyRwR87ysMpFnc5mfUfyZ"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCiaLsrjSNNudpgZ7vZR6jP"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RBmHQc8rVHdChxfnih1U3fa"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propriedade que define identificadores de uma classe relacionada a certa subclasse.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">identificadosPor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDFkJUr6idLHyH58bwNkQCK -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RDFkJUr6idLHyH58bwNkQCK">
+        <rdfs:subPropertyOf rdf:resource="http://webprotege.stanford.edu/R8pxttQKlgv0oicgdDnctJi"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RZflwQbRzNrwFZ0RH9JzBL"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7ICkEJ3gSvFW1H5j4oCQCc"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9FGkPY1GKM1YR7D16G4wBk"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/ROZWYPGvIQGAvu344NDrIL"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF"/>
+        <rdfs:label xml:lang="pt-br">possui</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDsKxBGHAlsarMNcAEbVQ5H -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RDsKxBGHAlsarMNcAEbVQ5H">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RBmHQc8rVHdChxfnih1U3fa"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7YRR4EhwRsHQczLQ1JFKxF"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R9TLV1n1NJ671aN445l7Ml"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RB6NOE9qkifFCX8eb3NMdx7"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RkCbrvsJGk6e063iAiIpRJ"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propriedade que define causa de uma classe relacionada a certa subclasse.</rdfs:comment>
+        <rdfs:label xml:lang="pt-br">causa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RMcIy8gYPbjzRNWB0AM32v -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RMcIy8gYPbjzRNWB0AM32v">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8Vhgd6OyaQDHSPjcCrppG5"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RSOvOO5bvwVJfNwuh7YXP2"/>
+        <rdfs:label xml:lang="pt-br">é</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RryCJMV8WdBobaxVOXekrc -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RryCJMV8WdBobaxVOXekrc">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R7bbOPXG3C4rUH1tl2X9FFg"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RB1l2swHoRuuZxUyIcrlXef"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RB9ExMpkd0Z0KNLRSKrauAI"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RChhhcVahsJ6f1BU9TWLzWv"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/Rwaq8SvCqlvrtmRsz5Gm4G"/>
+        <rdfs:label xml:lang="pt-br">compostaPor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R6kpEDFdbD33lvW6M38uAr -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R6kpEDFdbD33lvW6M38uAr">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w"/>
+        <rdfs:label xml:lang="pt-br">Espiritualidade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R741xm3FQQA782x6vkYcD5l -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R741xm3FQQA782x6vkYcD5l">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Indisposição para atividades simples</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7ICkEJ3gSvFW1H5j4oCQCc -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7ICkEJ3gSvFW1H5j4oCQCc">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF"/>
+        <rdfs:label xml:lang="pt-br">Professores</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7RkTxYYJrtIOyFKzVJWBJS -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7RkTxYYJrtIOyFKzVJWBJS">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Dependência química</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7YRR4EhwRsHQczLQ1JFKxF -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7YRR4EhwRsHQczLQ1JFKxF">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBmHQc8rVHdChxfnih1U3fa"/>
+        <rdfs:label xml:lang="pt-br">Subdesenvolvimento psicológico</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7bGyQnevNaN7TxB887TpwF -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7bGyQnevNaN7TxB887TpwF">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Falta de habilidades comportamentais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7bbOPXG3C4rUH1tl2X9FFg -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7bbOPXG3C4rUH1tl2X9FFg">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:label xml:lang="pt-br">DEG - Decanato de Ensino e Graduação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7jRGiGxOVlcx6eBnEQ5CRq -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7jRGiGxOVlcx6eBnEQ5CRq">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Balança entre vida social e profissional</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7zDvUi0T1S5j9To75WxV8N -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7zDvUi0T1S5j9To75WxV8N">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Pensamentos negativos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8Bl9FinzCvtu15CkmhKFZi -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8Bl9FinzCvtu15CkmhKFZi">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Competência</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8IJUk8f8imjZn6NUd51jHz -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8IJUk8f8imjZn6NUd51jHz">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Bem-estar subjetivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8MroHBmY7z1tlcL5z1afRt -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8MroHBmY7z1tlcL5z1afRt">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Esperança</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8OD4u4iI5nlmUvBs4DF9FI -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8OD4u4iI5nlmUvBs4DF9FI">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Privações</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8Vhgd6OyaQDHSPjcCrppG5 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8Vhgd6OyaQDHSPjcCrppG5">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h"/>
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RSOvOO5bvwVJfNwuh7YXP2"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rf3br4CtlpEbxIVLzTVoJL"/>
+        <rdfs:label xml:lang="pt-br">Perturbação mental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Rede de apoio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8eYa2NoEcRjeoCAOaCbPpz -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8eYa2NoEcRjeoCAOaCbPpz">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7jRGiGxOVlcx6eBnEQ5CRq"/>
+        <rdfs:label xml:lang="pt-br">Frustração</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8f3khMrLfwSaMT4zbIMut4 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8f3khMrLfwSaMT4zbIMut4">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8OD4u4iI5nlmUvBs4DF9FI"/>
+        <rdfs:label xml:lang="pt-br">Vida equilibrada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8z6EUUdvUYr1962EqzNfhv -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8z6EUUdvUYr1962EqzNfhv">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Problemas familiares</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R907T4OG6aRS4hZM3oEnMMI -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R907T4OG6aRS4hZM3oEnMMI">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Solidariedade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9FGkPY1GKM1YR7D16G4wBk -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9FGkPY1GKM1YR7D16G4wBk">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF"/>
+        <rdfs:label xml:lang="pt-br">Alunos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9LmBovBBU3Wr7Ys2lxfT0h">
+        <owl:equivalentClass rdf:resource="http://webprotege.stanford.edu/RSOvOO5bvwVJfNwuh7YXP2"/>
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rf3br4CtlpEbxIVLzTVoJL"/>
+        <rdfs:label xml:lang="pt-br">Doença mental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9NngjbIZgVhZzHWioLXk1C -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9NngjbIZgVhZzHWioLXk1C">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Consumo de drogas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9NoUrkypJYyDMTflvuFwbJ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9NoUrkypJYyDMTflvuFwbJ">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R7jRGiGxOVlcx6eBnEQ5CRq"/>
+        <rdfs:label xml:lang="pt-br">Competitividade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9TLV1n1NJ671aN445l7Ml -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9TLV1n1NJ671aN445l7Ml">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Ansiedade desordenada</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9dLrh34CrhyDAHtFuBjUwh -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9dLrh34CrhyDAHtFuBjUwh">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Exposição</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB1l2swHoRuuZxUyIcrlXef -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RB1l2swHoRuuZxUyIcrlXef">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:label xml:lang="pt-br">Nepasd - Pesquisas e Atendimentos em Saúde Mental e Drogas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB6NOE9qkifFCX8eb3NMdx7 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RB6NOE9qkifFCX8eb3NMdx7">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RBmHQc8rVHdChxfnih1U3fa"/>
+        <rdfs:label xml:lang="pt-br">Instabilidade contínua</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB8hbj8zDToQxqhv5RQWlon -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RB8hbj8zDToQxqhv5RQWlon">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Carga de trabalho</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RB9ExMpkd0Z0KNLRSKrauAI -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RB9ExMpkd0Z0KNLRSKrauAI">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:label xml:lang="pt-br">DAC - Decanato de Assuntos Comunitários</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBGUwj8ZtPm3SJIybVQFIhv -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBGUwj8ZtPm3SJIybVQFIhv">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Choro frequente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBIZfZO5SfY4o0w2rDmRf2k -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBIZfZO5SfY4o0w2rDmRf2k">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Falta de incentivo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBfa2njR0brdps7YGYFrgwV -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBfa2njR0brdps7YGYFrgwV">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Meditação</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBmHQc8rVHdChxfnih1U3fa -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBmHQc8rVHdChxfnih1U3fa">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCiaLsrjSNNudpgZ7vZR6jP"/>
+        <rdfs:label xml:lang="pt-br">Mal-estar mental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBsbihQdGDno2FlUhFXVE12 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBsbihQdGDno2FlUhFXVE12">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Dores físicas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCA1jueaEa5xy7Z24XCUOZ8 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCA1jueaEa5xy7Z24XCUOZ8">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Tristeza profunda</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCG4fmp6Z3WZvqLzj9NwjRB -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCG4fmp6Z3WZvqLzj9NwjRB">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Ajustes emocionais</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCIXDQQD6VnE9ETcFDjD6Us -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCIXDQQD6VnE9ETcFDjD6Us">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Aspectos psicológicos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCOuPXe4i8d8AP9piHDur4h -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCOuPXe4i8d8AP9piHDur4h">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Apoio familiar</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCa0j90VpgaVHZxqnb4vq98 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCa0j90VpgaVHZxqnb4vq98">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Mudanças comportamentais bruscas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCbbRxo6NIWp69MlwsyIcdx -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCbbRxo6NIWp69MlwsyIcdx">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Autonomia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCiaLsrjSNNudpgZ7vZR6jP"/>
+        <rdfs:label xml:lang="pt-br">Depressão</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCgC6sBvmou7b1263qt6rqG -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCgC6sBvmou7b1263qt6rqG">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Pressão social</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RChNydwvaNuDbGTQiylUOuu -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RChNydwvaNuDbGTQiylUOuu">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Distúrbios do sono</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RChOBQAlba18dZNKXX1sg6l -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RChOBQAlba18dZNKXX1sg6l">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8OD4u4iI5nlmUvBs4DF9FI"/>
+        <rdfs:label xml:lang="pt-br">Sono</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RChhhcVahsJ6f1BU9TWLzWv -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RChhhcVahsJ6f1BU9TWLzWv">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:label xml:lang="pt-br">DDS - Diretoria de Desenvolvimento Social</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCiaLsrjSNNudpgZ7vZR6jP -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCiaLsrjSNNudpgZ7vZR6jP">
+        <rdfs:label xml:lang="pt-br">Sintomas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCks8RiQtZuY0pvn5JDLK8f -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCks8RiQtZuY0pvn5JDLK8f">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Terapias Expressivas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDGIg5RYFsN242Len2xd7JH -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDGIg5RYFsN242Len2xd7JH">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Dependência interna</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDGh4qh9GvZVfrGaKAic4j0 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDGh4qh9GvZVfrGaKAic4j0">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Rejeição</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDIm0vtOOr4CvgD3KtU92dO -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDIm0vtOOr4CvgD3KtU92dO">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCIXDQQD6VnE9ETcFDjD6Us"/>
+        <rdfs:label xml:lang="pt-br">Perda de referências</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDLOcNmlRq2k3lFZwu3j8FA -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDLOcNmlRq2k3lFZwu3j8FA">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm"/>
+        <rdfs:label xml:lang="pt-br">Auto-cobrança</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDRHooNdSgnTBLEMcJpulv8 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDRHooNdSgnTBLEMcJpulv8">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Psicoterapia</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDiwuxBgUWt2OvPTRtBbGqr -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDiwuxBgUWt2OvPTRtBbGqr">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Irritabilidade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDpueSyROse6UwGvzPlkleV -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDpueSyROse6UwGvzPlkleV">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w"/>
+        <rdfs:label xml:lang="pt-br">Cultura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/REv1ygBuUfzqwz5FT6tMSE -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/REv1ygBuUfzqwz5FT6tMSE">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Suicídio</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ROZWYPGvIQGAvu344NDrIL -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/ROZWYPGvIQGAvu344NDrIL">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF"/>
+        <rdfs:label xml:lang="pt-br">Servidores</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts">
+        <rdfs:label xml:lang="pt-br">Terapias/Cura</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RPhm7tBSYzsjQV6egsqjE9 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RPhm7tBSYzsjQV6egsqjE9">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w"/>
+        <rdfs:label xml:lang="pt-br">Estigma</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RSOvOO5bvwVJfNwuh7YXP2 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RSOvOO5bvwVJfNwuh7YXP2">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rf3br4CtlpEbxIVLzTVoJL"/>
+        <rdfs:label xml:lang="pt-br">Transtorno mental</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RY6mBRgaFqp0wQyeZYFQjR -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RY6mBRgaFqp0wQyeZYFQjR">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Baixa autoestima</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RZflwQbRzNrwFZ0RH9JzBL -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RZflwQbRzNrwFZ0RH9JzBL">
+        <rdfs:label xml:lang="pt-br">Universidade</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rdx9Dr5Dlym06zfd7HtBwj -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rdx9Dr5Dlym06zfd7HtBwj">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RP5iXQPCYR5jRx0Xk4eFts"/>
+        <rdfs:label xml:lang="pt-br">Espiritual</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/ReJmxW5QYA7unKKXUfTrKF">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RZflwQbRzNrwFZ0RH9JzBL"/>
+        <rdfs:label xml:lang="pt-br">Pessoas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rf3br4CtlpEbxIVLzTVoJL -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rf3br4CtlpEbxIVLzTVoJL">
+        <rdfs:label xml:lang="pt-br">Definição</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RkCbrvsJGk6e063iAiIpRJ -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RkCbrvsJGk6e063iAiIpRJ">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RCf5RcGysFfhMYGGZeGa28S"/>
+        <rdfs:label xml:lang="pt-br">Isolamento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RmiIHjgLybxAqBNnqtpuNm">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label xml:lang="pt-br">Conceitos básicos</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RvsPPvgiOdh5N6UxLIuKrq -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RvsPPvgiOdh5N6UxLIuKrq">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w"/>
+        <rdfs:label xml:lang="pt-br">Religião</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rwaq8SvCqlvrtmRsz5Gm4G -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rwaq8SvCqlvrtmRsz5Gm4G">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8dBgZRMxNVejrnjZFsklTi"/>
+        <rdfs:label xml:lang="pt-br">SOU - Serviço de Orientação ao Universitário</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/Rwobe8NiDFlWaMvxSKRN6w">
+        <rdfs:label xml:lang="pt-br">Estudos sociais</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.10) https://github.com/owlcs/owlapi -->
+
