@@ -1,0 +1,227 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% page_attribute "page_title" %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  {% comment %}<link src="{% static 'assets/favicon.icon' %}" rel="favi-icon">{% endcomment %}
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  {% render_block "css" %}
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">WikiJour</a></h1>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          {% show_menu 0 100 100 100 %}  
+          <li class="drop-down"><a>Navegação</a>
+            <ul>
+              <li><a href="#conteudo-R">R</a></li>
+              <li><a href="#RStudio">RStudio</a></li>
+              <li><a href="#Ggplot2">Ggplot2</a></li>
+              <li><a href="#dplyr">Dplyr</a></li>
+              <li><a href="#video">Vídeo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1><span>R</span>
+      </h1>
+      <h2>Aqui teremos a parte de R</h2>
+      <div class="d-flex">
+        <a href="#featured-services" class="btn-get-started scrollto">Vamos começar!</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+
+    <!-- ======= About Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Linguagem de programação R.</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3 id="conteudo-R">Para que serve o R?</h3>
+            <p>
+              R é uma linguagem de programação multi-paradigma, ou seja,
+              podemos utilizar princípios tanto do paradigma funcional, sequencial e o orientado a objetos.
+              <br>
+              Porém o R brilha mesmo é na parte estátistica, com pacotes que facilitam muito na hora de desenvolver.
+              Aqui nesse site vou abordar principalmente sobre o <strong>ggplot2</strong> e sobre o <strong>
+                dplyr.
+              </strong>
+            </p>
+
+             <h3 id="RStudio">R Studio</h3>
+             <p>
+               Para melhorar sua experiência com a linguagem R recomendamos a utilização
+               do ambiente de desenvolvimento R Studio.
+               <br>
+               Conseguimos aproveitar melhor dos pacotes para R dentro dessa IDE, por possuir uma parte para download de
+               packages e até visualização dos dados que você importar.
+               <br>
+               Primeiro você terá que instalar a linguagem R no seu computador, podemos encontrar aqui neste
+               <a href="https://cran.r-project.org/bin/windows/base/">link</a> o download pra Windows. E para fazermos
+               download da IDE, R Studio, podemos encontrar neste 
+               <a href="https://www.rstudio.com/products/rstudio/download/">link</a>
+               também para qualquer sistema operacional que você esteja usando.
+               A interface quando a gente instala o R Studio é bem parecido com isso: <br>
+               <img src="{% static 'assets/img/rimage.png' %}" alt="foto do r" id="imagem">
+             </p>
+
+             <h3 id="Ggplot2">Ggplot2</h3>
+             <p>Ggplot2 é um pacote para visualização de dados dentro da linguagem estátistica R.</p>
+             <p>Onde o intuito é gerar gráficos de maneira rápida e fácil. Baseado no The Grammar of Graphics, livro de estátistica na computação, o ggplot2 recebe uma entrada de dados e com essa entrada podemos manipular utilizando a biblioteca.</p>
+             <h5>Instalação</h5>
+             <p>Podemos installar da maneira mais fácil que é utilizando o tidyverse: </p>
+             <code>install.packages("tidyverse")</code>
+             <p>Com esse pacote teremos praticamente todas as ferramentas necessárias para manipular dados dentro do R Studio. Ou também podemos installar individualmente:</p>
+             <code>install.packages("ggplot2")</code>
+             <p>E também temos mais uma maneira que será explicado no vídeo no final dessa seção.</p>
+             <h5>Utilização</h5>
+             <p>Bom, o pacote ggplot2 possui muitas funcionalidades para apenas descrever aqui em uma Wiki, porém, temos comandos que quase sempre iremos utilizar, como por exemplo, o comando <code>ggplot()</code> que seguido pode ser combinado com o comando: <code>aes()</code> que serve pra declararmos a estética do nosso gráfico. Exemplo:</p>
+             <code>
+               library(ggplot2) 
+             </code>
+             <code>ggplot(mpg, aes(displ, hwy, colour = class)) +</code>
+             <code>
+               geom_point() 
+             </code>
+             <img src="{% static 'assets/ggplot2.png' %}" alt="gráfico ggplot">            
+             <p>Esse exemplo foi retirado do site do próprio tidyverse que temos aqui: <a href="https://ggplot2.tidyverse.org/">link.</a></p>
+
+             <h5>CheatSeet</h5>
+             <p>Existe um CheatSeet para essa ferramenta que praticamente ilustra todos os comandos que vamos usar no nosso dia a dia com o ggplot2.</p>
+             <div style="display: flex;">
+               <a href="https://github.com/rstudio/cheatsheets/blob/master/data-visualization-2.1.pdf">
+                <img src="{% static 'assets/cheatseet1.png' %}" alt="Foto do cheatSeet" style="width: 30rem;" style="height: 20rem;">
+                <img src="{% static 'assets/cheatseet.png' %}" alt="Foto do cheatSeet continuacao" style="width: 30rem;" style="height: 20rem;">
+               </a>
+             </div>
+             <p>Podemos acessar o repositório do github se clicarmos nas imagens, para visualizarmos melhor o conteúdo.</p>
+
+             <h3 id="dplyr">Dplyr</h3>
+             <p>Dplyr é uma biblioteca, ou também chamado de pacote(package), que nós da acesso a maneiras mais fáceis de manipular os dados.</p>
+             <ul>
+               <li><code>select()</code> pegamos uma variável de acordo com o seu nome.</li>
+               <li><code>filter()</code> filtramos os nossos dados baseado em uma condicional.</li>
+               <li><code>summary()</code> reduzimos os nossos dados para apenas uma variável.</li>
+               <li><code>groub_by()</code> onde podemos realizar uma operação para determinado grupo(group).</li>
+             </ul>
+
+             <h5>Instalação</h5>
+             <p>Para instalar o dplyr seguimos a mesma ideia do ggplot2. Assim executando os seguintes comandos no nosso RStudio: </p>
+             <code>install.packages("tidyverse")</code>
+             <code>install.packages("dplyr")</code>
+             <p>Onde usando o tidyverse podemos instalar várias ferramentas de uma vez, ou instalar individualmente essa ferramenta.</p>
+
+             <h5>CheatSeet</h5>
+             <p>Para o dplyr também existe um CheatSeet igual temos para o ggplot2.</p>
+             <div style="display: flex;">
+               <a href="https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf">
+               <img src="{% static 'assets/dplyrCheat.png' %}" alt="Foto do CheatSeet pro dplyr" style="width: 30rem;" style="height: 20rem;">
+               <img src="{% static 'assets/dplyrCheat2.png' %}" alt="Segunda foto do CheatSeet pro dplyr" style="width: 30rem;" style="height: 20rem;">
+               </a>
+             </div>
+
+             <p>Assim como nas fotos do CheatSeet do ggplot2, podemos acessar o repositório do github se clicarmos na imagem.</p>
+
+             <h5>Onde estudar?</h5>
+             <p>Existe um site incrível e gratuito que abrange todas essas ferramentas de maneira mais aprofudada, caso você tenha interesse, podemos encontrar aqui: <a href="https://www.datacamp.com/">link.</a> O datacamp é um site onde oferece treinamentos a respeito da área de Ciência de Dados, podemos encontrar vídeo aulas e também exercícios nessa plataforma.</p>
+
+             <h3 id="video">Vídeo Explicativo sobre R.</h3>
+             <video width="100%" height="400px" controls>
+               <source src="{% static 'assets/videoSobreR.mp4' %}" type="video/mp4"> 
+             </video>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Sobre o site</h2>
+          <p>Este site foi desenvolvido na disciplina de Tópicos avançados em Computadores.</p>
+        </div>
+
+        <div class="row">
+         
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Com o intuito de ajudar alunos/jornalistas do curso de Jornalismo na Universidade de Brasília.</h3>
+            
+            <p>
+              Estaremos disponibilizando tutoriais de ferramentas comuns no dia a dia trabalhando com a área de Ciência de dados. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
