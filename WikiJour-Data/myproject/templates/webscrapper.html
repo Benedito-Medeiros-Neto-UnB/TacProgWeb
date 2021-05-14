@@ -1,0 +1,166 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% page_attribute "page_title" %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  {% render_block "css" %}
+  <!-- =======================================================
+  * Template Name: BizLand - v1.2.1
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">WikiJour</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          {% show_menu 0 100 100 100 %}  
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1><span>Web Scrapper</span>
+      </h1>
+      <h2>Aqui teremos a parte de Web Scrapper</h2>
+      <div class="d-flex">
+        <a href="#featured-services" class="btn-get-started scrollto">Vamos começar!</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+
+    <!-- ======= About Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Ferramenta de Raspagem Web Scrapper</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Webscraper.io</h3>
+            <p>O webscraper.io é um programa gratuito em forma de plugin, mas que pode ser pago para utilizá-lo em formas mais complexas.Ele permite realizar raspagem de dados de forma simples, apenas clicando  em ícones, textos e outros elementos de páginas HTML. Mais informações acerca dessa ferramenta podem ser vistas pelo seguinte link: <a href="https://webscraper.io/">link.</a></p>
+            <p>Para utilizar  o webscraper.io, é necessário utilizar o navegador Google Chrome e instalar  o plugin no link:
+              <a href="https://chrome.google.com/webstore/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn?hl=en">link.</a>
+            </p>
+            <p>Concluída a instalação, seguimos os seguintes passos:</p>
+            <ol>
+              <li>
+                Abra o modo desenvolvedor em uma página web (clique F12). Caso o mododesenvolvedor esteja na vertical, clique no símbolo de três pontos verticais e clique na opção apontada pela seta na imagem: <br>
+                <img src="{% static 'assets/print1.png' %}" alt="Primeiro passo foto" style="width: 30rem;">
+              </li>
+              <li>
+                Com modo desenvolvedor na horizontal, clique em “Web Scraper”, “Create new sitemap” e “Create Sitemap”: <br>
+                <img src="{% static 'assets/print2.png' %}" alt="Segundo passo foto" style="width: 30rem;">
+              </li>
+              <li>
+                Em “Sitemap name” crieum nome para seu sitemap. E em “Start URL” cole o link da página que você deseja raspar. Por fim, clique em “Create Sitemap”.
+              </li>
+              <li>
+                Agora, clique em “Add new selector”. Na caixa de texto “Id”, crie um nome para o seletor que você está criando. Na caixa de texto “Type”, selecione o tipo de dado que será raspado (normalmente é tipo Text). Marque a caixa “Multiple” e clique em “Select”, presente na seção “Selector”.
+              </li>
+              <li>
+                Após clicar  em “Select”, clique em alguns elementos que você queira raspar (geralmente após clicar  em 2, o plugin já reconhece os outros). No exemplo a seguir, desejamos raspar os preços dos livros na página: <br>
+                <img src="{% static 'assets/print3.png' %}" alt="Terceiro passo foto" style="width: 30rem;">
+              </li>
+              <li>
+                Com os elementos agora marcados em vermelho, clique em “Done selecting”. Por fim, clique em “Save selector”. Então, no botão “Data Preview” é possível ver os dados raspados pelo plugin.
+                <p>Caso você queira baixar os dados em formato CSV, clique em “Sitemap *nome do seu Sitemap*” e clique em “Export data as CSV”<br></p>
+                <img src="{% static 'assets/print4.png' %}" alt="Quarto passo foto" style="width: 30rem;">
+              </li>
+              <li>Clique em “Download now!” e pronto, você baixou os dados raspados em formato CSV.</li>
+            </ol>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Sobre o site</h2>
+          <p>Este site foi desenvolvido na disciplina de Tópicos avançados em Computadores.</p>
+        </div>
+
+        <div class="row">
+         
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Com o intuito de ajudar alunos/jornalistas do curso de Jornalismo na Universidade de Brasília.</h3>
+            
+            <p>
+              Estaremos disponibilizando tutoriais de ferramentas comuns no dia a dia trabalhando com a área de Ciência de dados. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% page_attribute "page_title" %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  {% render_block "css" %}
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">WikiJour</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          {% show_menu 0 100 100 100 %}  
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1>Bem vindo a página de Jornalismo de Dados <span>UnB</spa>
+      </h1>
+      <h2>Aqui serão disponibilizados alguns tutoriais de ferramentas de Jornalismo de Dados.</h2>
+      <p>Site desenvolvido pelos alunos Pedro Chaves e Pedro Vitor durante o segundo semestre de 2020.</p>
+      <div class="d-flex">
+        <a href="#featured-services" class="btn-get-started scrollto">Vamos começar!</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon">
+                <img src="{% static 'assets/python.png' %}" alt="Icone python" style="width: 45px;">
+              </div>
+                <h4 class="title"><a href="/python">Aqui teremos Python</a></h4>
+                <p class="description">NumPy, Pandas, IPython, Django e DjangoCMS.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><img src="{% static 'assets/rstudio.png' %}" style="width: 40px;"></img></div>
+              <h4 class="title"><a href="/r">Teremos também R</a></h4>
+              <p class="description">Tutorial básico de ferramentas em R para facilitar o trabalho com dados</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><img src="{% static 'assets/webscrapper.png' %}"></img></div>
+              <h4 class="title"><a href="/webscrapper">Web Scrapper</a></h4>
+              <p class="description">Tutorial WebScrapper para raspagem de dados</p>
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 30px;">Este site foi desenvolvido sobre demanda do Prof. Benedito Medeiros Neto com o intuito de
+        ajudar com conteúdos sobre ferramentas de Ciência de Dados e para auxiliar os alunos da disciplina de Jornalismo de Dados onde,
+        de forma fácil, encontrar conteúdos para ajuda-los.
+        <br><br>
+        Podemos encontrar mais informações sobre o Prof. Benedito e conteúdos que ele disponibiliza em seu site no <a href="http://www.filosofiacienciaarte.org/index.php/home">link.</a>
+        </p>
+
+        <h2>O que é Jornalismo de dados?</h2>
+        <p>"O Jornalismo de Dados é uma modalidade de produção digital de notícias que utiliza grandes bases de dados para elaborar
+          peças de conteúdo focadas em correlações informacionais,
+          além de se valer de recursos gráficos e interativos para tornar mais agradável a
+          experiência de visualização do usuário consumidor de notícias." - Érico Mafra</p>
+        
+        <h2>Como surgiu o conceito de Jornalismo de Dados?</h2>
+        <p>O termo em inglês “Data-driven Journalism” começou a ser utilizado em 2009 para designar as
+        iniciativas de produção de notícias a partir de dados estruturados nos Estados Unidos. O conceito surgiu
+        da necessidade de dar forma ao novo modelo jornalístico, facilitando a compreensão por parte da opinião pública.</p>
+        <p>O primeiro exemplo do qual se tem notícia vem do jornal norte-americano The New York´s Tribune que, em 1849,
+          publicou na página de capa um gráfico completo e visualmente amigável sobre
+          a epidemia de cólera que atingiu a cidade naquele ano. O gráfico mostrava a proporção
+          entre as mortes causada pela doença em relação ao número de óbitos.</p>
+
+        <h2>Em quais etapas consiste o Jornalismo de Dados?</h2>
+        <p>De acordo com o artigo escrito pelo repórter Alex Howard, as etapas consistem em:
+          "reunir, limpar, organizar, analisar, visualizar e publicar dados para apoiar a criação de atos de jornalismo".
+          Além disso, de acordo com o site Escola de Dados, há um consenso de que o jornalismo de dados inclui 3 categorias:
+          <ol>
+            <li>Obtenção: extração de um site, download de uma planilha, solicitação de informações públicas ou outras.</li>
+            <li>Análise: procure pistas, histórias ou padrões estudando os dados.</li>
+            <li>Apresentação: publique os dados de forma atraente e informativa. Pode ser em infográficos, formatos da web, aplicativos de notícias ou outros.</li>
+          </ol>
+        
+        </p>
+      </div>
+    </section><!-- End Featured Services Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Sobre o site</h2>
+          <p>Este site foi desenvolvido na disciplina de Tópicos avançados em Computadores.</p>
+        </div>
+
+        <div class="row">
+         
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Com o intuito de ajudar alunos/jornalistas do curso de Jornalismo na Universidade de Brasília.</h3>
+            
+            <p>
+              Estaremos disponibilizando tutoriais de ferramentas comuns no dia a dia trabalhando com a área de Ciência de Dados. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

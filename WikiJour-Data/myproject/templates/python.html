@@ -1,0 +1,298 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% page_attribute "page_title" %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  {% render_block "css" %}
+  <!-- =======================================================
+  * Template Name: BizLand - v1.2.1
+  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">WikiJour</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          {% show_menu 0 100 100 100 %}  
+          <li class="drop-down"><a>Navegação</a>
+            <ul>
+              <li><a href="#numpy">NumPy</a></li>
+              <li><a href="#pandas">Pandas</a></li>
+              <li><a href="#matplotlib">Matplotlib</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1><span>Python</span>
+      </h1>
+      <h2>Aqui teremos a parte de Python</h2>
+      <div class="d-flex">
+        <a href="#featured-services" class="btn-get-started scrollto">Vamos começar!</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Linguagem de programação Python.</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <h3 id="numpy">NumPy</h3>
+              <p>
+              Numpy é uma bibliotecamuito utiliza da para computação científica e análise de dados utilizando Python. Por meio dela é possível trabalhar com arrays, álgebra linear, matrizes e mais.
+                <br>
+                No Python já existe uma estrutura de comportamento similar  ao array: a lista.  No entanto, os arrays de Numpy apresentam um processamento muito mais rápido que a lista, sendo assim, uma escolha muito interessante para sistemas que exijam um bom desempenho.
+                <br>
+                <a href="https://numpy.org/install/">
+                  Instalação do numpy.
+                </a>
+              </p>
+
+              <p>Obs: os exemplos a seguir foram realizados no shell do Python3</p>
+              <p>Para utilizar  esse pacote, devemos importar por meio de:</p>
+              <img src="{% static 'assets/np1.png' %}" style="width: 30rem;">
+              <p>A peça fundamental do numpy são os N-dimensional array, também chamados de ndarrays, que permite você realizar operações de forma rápida e flexível em conjuntos de dados. Dados esses que podem ser inteiros, floats, booleanos, strings, números complexos e muitos outros</p>
+              <p>Podemos utilizar  conjuntos de dados como listas para criar  ndarrays. No seguinte código, criamos um array de 4 elementos, sendo eles 123,  454,  434  e 12.</p>
+              <img src="{% static 'assets/np2.png' %}" alt="Foto 2 Numpy" style="width: 30rem;">
+              <p>Para armazenar o array em uma variável, basta atribuí-lo:</p>
+              <img src="{% static 'assets/np3.png' %}" alt="Foto 3 numpy" style="width: 30rem;">
+              <p>Além disso, como é autoexplicativo no nome, podemos ter múltiplas  dimensões nesse array. Por exemplo:</p>
+              <p>2 dimensões:</p>
+              <img src="{% static 'assets/np4.png' %}" alt="Foto 4 numpy" style="width: 30rem;">
+              <p>3 dimensões:</p>
+              <img src="{% static 'assets/np5.png' %}" alt="Foto 5 numpy" style="width: 30rem;">
+              <p>Também podemos iniciarum array sem necessitar de uma lista. Por exemplo:Array de zeros com 2 linhas e 3 colunas:</p>
+              <img src="{% static 'assets/np6.png' %}" alt="Foto 6 numpy" style="width: 30rem;">
+              <p>Array de uns com 4 linhas e 2 colunas:</p>
+              <img src="{% static 'assets/np7.png' %}" alt="Foto 7 numpy" style="width: 30rem;">
+              <p>Array de zeros com 3 linhas, 4 colunas e 2 repetições disso (3 dimensões):</p>
+              <img src="{% static 'assets/np8.png' %}" alt="Foto 8 numpy" style="width: 30rem;">
+              <p>Array com 10  elementos, de 0 a 9:</p>
+              <img src="{% static 'assets/np9.png' %}" alt="Foto 9 numpy" style="width: 30rem;">
+              <p>Array de 4 números aleatórios:</p>
+              <img src="{% static 'assets/np10.png' %}" alt="Foto 10 numpy" style="width: 30rem;">
+              <p>É possível realizar operações aritméticas com arrays, como adição, subtração, multiplicação  e muitas outras</p>
+              <img src="{% static 'assets/np11.png' %}" alt="Foto 11 numpy" style="width: 30rem;">
+              <p>Note que as operações realizadas não são operações de matrizes de álgebra linear.De forma similar  a listas em Python, podemos acessar dadosde arrayspor meio de índicese slices:</p>
+              <img src="{% static 'assets/np12.png' %}" alt="Foto 12 numpy" style="width: 30rem;">
+              <p>No Numpy existem diversos métodos matemáticos e estatísticos. No seguinte exemplo foi feita a média, o desvio padrão e a soma de a:</p>
+              <img src="{% static 'assets/np13.png' %}" alt="Foto 13 numpy" style="width: 30rem;">
+              <p>Também é possível utilizar  cálculos  de álgebra linear. No exemplo a seguir foi realizada a multiplicação  de matrizes de álgebra linear:</p>
+              <img src="{% static 'assets/np14.png' %}" alt="Foto 14 numpy" style="width: 30rem;">
+              <p>Para guardar um array gerado para futuros usos,é possível armazená-lo em um arquivo npy. No exemplo, o array a é salvo em um arquivo chamado nome_array:</p>
+              <p>Também podemos salvar  arrays por meio de:</p>
+              <code>np.save(‘nome_array’, a)</code>
+              
+              <p>Além disso, ao invésde colocarmos  manualmente os dados em linhas  de código, podemos obtê-los por meio de leitura de arquivos. Dado um arquivo texto, podemos ler os dados e armazenar em um array para, então, trabalhar com eles.</p>
+              <img src="{% static 'assets/np15.png' %}" alt="Foto 15 numpy" style="width: 30rem;">
+              <p style="margin-top: 1rem;">Lista de exercícios de Numpy: <a href="https://www.w3resource.com/python-exercises/numpy/index.php">link.</a></p>
+    
+
+              <h3 id="pandas">Pandas</h3>
+              <p>O Pandas é uma biblioteca de Python montada com base no Numpy que contém estruturas de dados de alto-nível e ferramentas que permitem a análise de dados de forma fácil  e rápida.Para tal, o Pandas oferece estruturas e operações para manipular tabelas.</p>
+
+              <p>Instalação do Pandas: <a href="https://pandas.pydata.org/pandas-docs/stable/getting_started/install.html">link.</a> </p>
+
+              <p>Para importar a biblioteca é necessário ter a linha:</p>
+              <img src="{% static 'assets/pd1.png' %}" alt="Foto sobre o pandas" style="width: 30rem;">
+
+              <h5>As duas estruturas de dados mais relevantes dessa biblioteca são: Series e DataFrame.</h5>
+
+              <p>Series é um array de umadimensão que contém qualquer tipo de dado existente no Numpy e que cada elemento é localizado  por um índice, de forma similar as listas do Python.No exemplo é criada  uma Series de 4 elementos. Podemos ver os valores por meio de values e como o índice funciona por meio de index</p>
+              <img src="{% static 'assets/pd2.png' %}" alt="Foto dois sobre o pandas" style="width: 30rem;">
+
+              <p>É possível também definir os índices da series. No exemplo estamos criando a series com índices a, b, c e d.</p>
+              <img src="{% static 'assets/pd3.png' %}" alt="Foto tres sobre pandas" style="width: 30rem;">
+
+              <p>Podemos realizar  diversas operações, como filtragens, operações matemáticas e operações lógicas.Tais operações serão detalhadas na seção a seguir.</p>
+
+              <p>O dataframe pode ser interpretado como uma tabela contendo um conjunto de colunas, em que cada uma pode ter um tipo de dados diferente (string, inteiro, float, etc). O dataframe possui tanto um índice de coluna  quanto de linha.</p>
+
+              <p>Assim, como em Series, os valores retornados de dataframe é um ndarray, no entanto, de duas dimensões.</p>
+
+              <p>Existem diversas formas de criar um dataframe, mas a mais comum é por meio de um dicionário de listas ou arrays de NumPy, todos com o mesmo tamanho.</p>
+
+              <img src="{% static 'assets/pd4.png' %}" alt="Foto quatro sobre pandas" style="width: 30rem;">
+
+              <p>Podemos obter dados de uma coluna acessando por meio do nome das colunas (onde se obtém os dados da coluna) e pelo índice (onde se obtém os dados da linha):</p>
+              <img src="{% static 'assets/pd5.png' %}" alt="Foto cinco sobre pandas" style="width: 30rem;">
+
+              <p>Podemos atribuir valores a colunas por meio de:</p>
+              <img src="{% static 'assets/pd6.png' %}" alt="Foto seis sobre pandas" style="width: 30rem;">
+
+              <p>Outra forma comum de criar dataframes é por meio de dicionários aninhados, em que as chaves dos dicionários  externos se tornam os nomes das colunas e as chaves dos dicionários internos se tornam os índices:</p>
+              <img src="{% static 'assets/pd7.png' %}" alt="Foto sete sobre pandas" style="width: 30rem;">
+
+              <p>Note que como não especificamos um índice 2000 para ‘Nevada’, ao imprimir  o dataframe o valor nesse setor é NaN (Not a Number).</p>
+
+              <p>Entre as ferramentas mais importantes para mexer com series e dataframes, temos:</p>
+              <ul>
+                <li>
+                  Reindex: permite criar  um novo objeto com dados organizados por um novo índice.<br>
+                  <img src="{% static 'assets/pd8.png' %}" alt="Foto oito sobre pandas" style="width: 30rem;">
+                </li>
+                <li>
+                  Drop: permite criar um novo objeto sem índices especificados na chamada. <br>
+                  <img src="{% static 'assets/pd9.png' %}" alt="Foto nove sobre pandas" style="width: 30rem;">
+                </li>
+                <li >
+                  Indexação e filtragem: podemos acessar os elementos por meio dos índices e fazer operações que filtram os dados.<br>
+                  <img src="{% static 'assets/pd10.png' %}" alt="Foto dez sobre pandas" style="width: 30rem;">
+                </li>
+                <li>
+                  Operações aritméticas: podemos realizar operações aritméticas em series e dataframes. O fill_value=0 determina que caso o tamanho dos dataframes sejam diferentes, aqueles valores que o menor não tem devem ser preenchidos com 0. Caso não fosse explicitado, seriam valores NaN. 
+                  <img src="{% static 'assets/pd11.png' %}" alt="Foto onze sobre pandas" style="width: 30rem;">
+                </li>
+              </ul>
+
+              <p>Podemos também salvar dataframes e series em arquivos CSV com o seguinte código:</p>
+              <img src="{% static 'assets/pd12.png' %}" alt="Foto doze sobre pandas" style="width: 30rem;">
+
+              <p>Outra ferramentaimportante depandas é a leitura dearquivos de tabelas, como o csv e excel. Com ela podemos armazenar os valores lido sem um dataframe, de forma que seja fácil transferir dados de um arquivo de planilhas para um programa Python.</p>
+              <img src="{% static 'assets/pd13.png' %}" alt="foto treze sobre pandas" style="width: 30rem;">
+              <img src="{% static 'assets/pd14.png' %}" alt="foto catorze sobre pandas" style="width: 30rem;">
+
+              <p>Lista de exercícios de Pandas: <a href="https://www.w3resource.com/python-exercises/pandas/index.php">link.</a></p>
+
+              <h3 id="matplotlib">Matplotlib</h3>
+              <p>Matplotlib é uma biblioteca de Python muito utilizada  para gerar gráficos, desde linhas, histogramas, barra, gráfico  em pizza e muitos outros tipos mais complexos.No seguinte link são exemplificados os gráficosque a biblioteca é capaz de gerar <a href="https://matplotlib.org/stable/tutorials/introductory/sample_plots.html">link.</a>
+              </p>
+
+              <p>Instalação do Matplotlib: <a href="https://matplotlib.org/stable/users/installing.html">link.</a></p>
+              <p>Para importar a biblioteca ao seu programa, é necessário incluir a linha:</p>
+              <img src="{% static 'assets/plt1.png' %}" alt="Foto um sobre matplotlib" style="width: 30rem;">
+
+              <p>Os gráficos do matplotlib residem no objeto Figure. Para criá-lo, basta usar a seguinte linha:</p>
+              <img src="{% static 'assets/pl2.png' %}" alt="Foto dois sobre matplotlib" style="width: 30rem;">
+              <p>Em uma figura é possível existir vários subgráficos. Para tal, utilizamos o a função add_subplot, em que os dois primeiros argumentos definem o tamanho x e y do grid e o terceiro mostra sobre qual subplot se está definindo.</p>
+              <img src="{% static 'assets/pl3.png' %}" alt="Foto três sobre matplotlib" style="width: 30rem;">
+
+              <p>É possível estilizar seus gráficos. Por exemplo, nas seguintes linhas nós criamos gráficos de números aleatórias, em que um tem linha pontilhada e outro tem linha contínua. Além disso, no gráfico 1 decidimos adicionar uma mensagem ‘Hello world!’ no quadrante 5,3.</p>
+              <img src="{% static 'assets/pl4.png' %}" alt="Foto quatro sobre matplotlib" style="width: 30rem;">
+
+              <p>Por fim, podemos gerar o gráfico ao salvar a figura com o seguinte comando:</p>
+              <img src="{% static 'assets/pl5.png' %}" alt="Foto cinco sobre matplotlib" style="width: 30rem;">
+
+              <p>Após o comando, é gerada a figura com os dois gráficos:</p>
+              <img src="{% static 'assets/grafico1.png' %}" alt="Foto do primeiro gráfico" style="width: 30rem;">
+
+              <p>Trabalhando em conjunto com o pandas, é possível gerar gráficos a partir de series dataframes. No exemplo a seguir, criamos  um dataframe de números aleatórios  de 10 linhas e 4 colunas. Além disso, o índice é definido de 0 a 100, mas com “pulos” de 10. Por fim, é utilizada  a função plot para gerar o gráfico em barra no objeto fige a figura é salva.</p>
+              <img src="{% static 'assets/plt6.png' %}" alt="Foto seis sobre matplotlib" style="width: 30rem;">
+
+              <p>O gráfico gerado foi o seguinte:</p>
+              <img src="{% static 'assets/grafico2.png' %}" alt="Foto do segundo gráfico" style="width: 30rem;">
+
+              <p>Lista de exercícios de Matplotlib: <a href="https://www.w3resource.com/graphics/matplotlib/">link.</a></p>
+
+              <h3>IPython</h3>
+              <p>IPython é uma interface de linha de comando que podemos utilizar dentro do nosso terminal. Utilizamos principalmente pra desenvolver códigos em Python. Exemplo: </p>
+              <img src="{% static 'assets/ipython.png' %}" alt="Imagem do shell com IPython">
+              <p>Para abrir a interface do IPython precisamos executar o comando <code>ipython</code> no terminal.</p>
+              <h5>Instalação</h5>
+              <p>Para o instalar o IPython no seu computador devemos primeiramente possuir o python em nosso computador, após isso podemos simplesmente utilizar o pip ou instalar atráves do Anaconda.</p>
+              <p><strong>Para instalar com o pip: </strong>Podemos executar o comando <code>pip install ipython</code> no nosso terminal e pronto!</p>
+              <h3>Jupyter Notebook</h3>
+              <p>O Jupyter Notebook é uma ferramenta open-source(código aberto) voltada pras linguagens Julia, Python e R. O nome Jupyter é um acrônimo do nome das 3 linguanges, Julia, Python e R. É uma ferramenta voltada para criação e documentação podendo assim facilitar a documentação do código digitado. Muito utilizada na área de Ciência de Dados por facilitar também o compartilhamento de código.</p>
+              <h5>Instalação</h5>
+              <p>Podemos instalar o Jupyter Notebook utilizando o pip ou também baixando atráves do Anaconda.</p>
+              <p>Para instalar utilizando o pip escrevemos <code>pip install notebook</code>.</p>
+              <p>E digitando o comando <code>jupyter notebook</code> no nosso terminal teremos a seguinte tela:</p>
+              <img src="{% static 'assets/jupyter.png' %}" alt="Imagem do Jupyter">
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Sobre o site</h2>
+          <p>Este site foi desenvolvido na disciplina de Tópicos avançados em Computadores.</p>
+        </div>
+
+        <div class="row">
+         
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <h3>Com o intuito de ajudar alunos/jornalistas do curso de Jornalismo na Universidade de Brasília.</h3>
+            
+            <p>
+              Estaremos disponibilizando tutoriais de ferramentas comuns no dia a dia trabalhando com a área de Ciência de dados. 
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

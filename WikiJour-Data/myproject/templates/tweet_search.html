@@ -1,0 +1,68 @@
+{% extends 'teste.html' %}
+{% block content %}
+  <h2>Buscar dados no Twitter</h2>
+  <p>
+    Ferramenta desenvolvida com o intuito de proporcionar um mecanismo de raspagem de dados
+    para que sejam feitos estudos posteriores sobre os resultados. Com esta ferramenta, é possível
+    buscar tweets por palavras-chave e, se desejado, tweets de usuários específicos. Além disso,
+    é possível escolher se devem ser retornados tweets que tenham todas as palavras-chave listadas
+    ou no mínimo uma.
+  </p>
+  <form method="POST" novalidate>
+    {% csrf_token %}
+    <div class="row">
+      <div class="col-md-6">
+        <label for="exampleInputEmail1">Data Inicio</label>
+        <input
+          placeholder="01-01-2020"
+          class="form-control"
+          name="startDate"
+          id="startDate">
+      </div>
+      <div class="col-md-6">
+        <label for="exampleInputEmail1">Data Fim</label>
+        <input
+          placeholder="31-12-2020"
+          class="form-control"
+          name="endDate"
+          id="endDate">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Conta de Usuário a ser buscada</label>
+      <input
+        placeholder="@usuario_a_ser_buscado"
+        class="form-control"
+        name="username"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp">
+      <small id="emailHelp" class="form-text text-muted">*deixar em branco para não restringir usuário</small>
+    </div>
+    <div class="form-group">
+      <label for="typeSearch">O tweet deve conter: </label>
+      <select name="search" id="search">
+        <option value="all-kw">todas as palavras-chave</option>
+        <option value="one-kw">no mínimo uma palavra-chave</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="numSearch">Número máximo de tweets retornados: </label>
+      <select name="num" id="num">
+        <option value='ilimitado'>Ilimitado</option>option>
+        <option value="200">200</option>
+        <option value="100">100</option>
+        <option value="50">50</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Palavras-chave (Separadas por vírgula)</label>
+      <textarea
+        placeholder="palavra1,palavra2,palavra3,palavra4"
+        class="form-control"
+        name='words'
+        id="exampleFormControlTextarea1"
+        rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Buscar</button>
+  </form>
+{% endblock %}
