@@ -1,0 +1,36 @@
+{% extends 'portal/index.html' %}
+{% block content %}
+  <h2>Buscar dados no Twitter</h2>
+  <p>
+    Ferramenta desenvolvida com o intuito de proporcionar um mecanismo de raspagem de dados
+    para que sejam feitos estudos posteriores sobre os resultados. Com esta ferramenta, é possível
+    buscar tweets por palavras-chave e, se desejado, tweets de usuários específicos. Além disso,
+    é possível escolher se devem ser retornados tweets que tenham todas as palavras-chave listadas
+    ou no mínimo uma.
+  </p>
+  <h3>Tutorial da Ferramenta de Raspagem</h3>
+  <p>
+    1 - Instale o Python versão 3.8 por meio deste <a href='https://www.python.org/downloads/'>link</a>.<br>
+    2 - Instale a biblioteca Snscrape presente neste <a href='https://github.com/JustAnotherArchivist/snscrape'>
+      link</a>. Basta utilizar a linha de código: pip install snscrape<br>
+    3 - Clone ou copie o código presente no repositório <a href='https://github.com/pvvm/Raspagem-Twitter'>Raspagem-Twitter</a>.<br>
+    4 - Em um terminal/prompt de comando, no diretório onde foi armazenado o código, execute-o por meio
+    de: py scraper.py<br>
+    5 - Uma janela com o programa se abrirá e, a partir dela, é possível determinar os códigos a serem raspados.<br>
+    6 - O nome do usuário deve ser escrito (sem @) caso seja desejado raspar uma conta específica, sendo assim, o único valor
+    que deve ser preenchido opcionalmente.<br>
+    7 - As datas de início e fim de raspagem devem estar no formato DD-MM-AAAA.<br>
+    8 - Selecione se deseja que os tweets devam possuir todas as palavras chaves ou no mínimo uma.<br>
+    9 - Selecione se devem ser retornados tweets ilimitados, 200 ou menos.<br>
+    10 - Escreva as palavras-chave, separadas por vírgula.<br>
+    11 - Após clicar no botão de raspar, será criado um arquivo txt contendo os tweets raspados.
+  </p>
+  <p>
+    Obs: dependendo das palavras-chave, ao selecionar tweets ilimitados, é possível que o programa demore bastante para retornar todos os tweets.<br>
+  </p>
+  <p>
+    No vídeo a seguir temos um tutorial explicando passo a passo como utilizar a ferramenta:
+  </p>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/usj4hY-O0xs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{% endblock %}

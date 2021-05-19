@@ -1,0 +1,22 @@
+{% extends 'portal/index.html' %}
+{% block content %}
+  <h3>Portais e Reportagens</h3>
+  <br>
+  <p>
+    <i>
+        "O valor de todo o conhecimento está no seu vínculo com as nossas necessidades,
+        aspirações e ações; de outra forma, o conhecimento torna-se um simples lastro de memória,
+        capaz apenas - como um navio que navega com demasiado peso - de diminuir a oscilação da vida quotidiana."
+    </i> - V. O. Kliutchevski
+  </p>
+  <br>
+  <ul class="list-group">
+    {% for reference in references %}
+    <li class="list-group-item">
+      <a href="{{reference.url}}">
+        {{ reference.title }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
