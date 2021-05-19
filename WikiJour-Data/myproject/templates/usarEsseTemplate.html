@@ -1,7 +1,7 @@
 {% load cms_tags menu_tags sekizai_tags %}
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -12,7 +12,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <!-- <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon"> -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -28,12 +29,6 @@
   <!-- Template Main CSS File -->
   <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
   {% render_block "css" %}
-  <!-- =======================================================
-  * Template Name: BizLand - v1.2.1
-  * Template URL: https://bootstrapmade.com/bizland-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -42,13 +37,13 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="/">WikiJour</a></h1>
+      <h1 class="logo mr-auto"><a href="/">{% page_attribute "page_title" %}<span>.</span></a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
-          {% show_menu 0 100 100 100 %}  
+          {% show_menu 0 100 100 100 %}
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -58,69 +53,55 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1><span>Web Scrapper</span>
+      <h1>
+        <span>
+          {% block content %}
+            {% placeholder "content" %}
+          {% endblock content %}
+        <span>
       </h1>
-      <h2>Aqui teremos a parte de Web Scrapper</h2>
+      <h2>
+        {% block content1 %}
+          {% placeholder "content1" %}
+        {% endblock content1 %}
+      </h2>
       <div class="d-flex">
-        <a href="#featured-services" class="btn-get-started scrollto">Vamos começar!</a>
-      </div>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
     </div>
   </section><!-- End Hero -->
 
   <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-
     <!-- ======= About Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
-          <h2>Ferramenta de Raspagem Web Scrapper</h2>
+          <h2>
+            About
+          </h2>
         </div>
 
         <div class="row">
           <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
-            <h3>Webscraper.io</h3>
-            <p>O webscraper.io é um programa gratuito em forma de plugin, mas que pode ser pago para utilizá-lo em formas mais complexas.Ele permite realizar raspagem de dados de forma simples, apenas clicando  em ícones, textos e outros elementos de páginas HTML. Mais informações acerca dessa ferramenta podem ser vistas pelo seguinte link: <a href="https://webscraper.io/">link.</a></p>
-            <p>Para utilizar  o webscraper.io, é necessário utilizar o navegador Google Chrome e instalar  o plugin no link:
-              <a href="https://chrome.google.com/webstore/detail/web-scraper-free-web-scra/jnhgnonknehpejjnehehllkliplmbmhn?hl=en">link.</a>
+            <h3>
+              {% block content2 %}
+                {% placeholder "content2" %}
+              {% endblock content2 %}
+            </h3>
+            <p>
+              {% block content3 %}
+                {% placeholder "content3" %}
+              {% endblock content3 %}
             </p>
-            <p>Concluída a instalação, seguimos os seguintes passos:</p>
-            <ol>
-              <li>
-                Abra o modo desenvolvedor em uma página web (clique F12). Caso o mododesenvolvedor esteja na vertical, clique no símbolo de três pontos verticais e clique na opção apontada pela seta na imagem: <br>
-                <img src="{% static 'assets/print1.png' %}" alt="Primeiro passo foto" style="width: 30rem;">
-              </li>
-              <li>
-                Com modo desenvolvedor na horizontal, clique em “Web Scraper”, “Create new sitemap” e “Create Sitemap”: <br>
-                <img src="{% static 'assets/print2.png' %}" alt="Segundo passo foto" style="width: 30rem;">
-              </li>
-              <li>
-                Em “Sitemap name” crieum nome para seu sitemap. E em “Start URL” cole o link da página que você deseja raspar. Por fim, clique em “Create Sitemap”.
-              </li>
-              <li>
-                Agora, clique em “Add new selector”. Na caixa de texto “Id”, crie um nome para o seletor que você está criando. Na caixa de texto “Type”, selecione o tipo de dado que será raspado (normalmente é tipo Text). Marque a caixa “Multiple” e clique em “Select”, presente na seção “Selector”.
-              </li>
-              <li>
-                Após clicar  em “Select”, clique em alguns elementos que você queira raspar (geralmente após clicar  em 2, o plugin já reconhece os outros). No exemplo a seguir, desejamos raspar os preços dos livros na página: <br>
-                <img src="{% static 'assets/print3.png' %}" alt="Terceiro passo foto" style="width: 30rem;">
-              </li>
-              <li>
-                Com os elementos agora marcados em vermelho, clique em “Done selecting”. Por fim, clique em “Save selector”. Então, no botão “Data Preview” é possível ver os dados raspados pelo plugin.
-                <p>Caso você queira baixar os dados em formato CSV, clique em “Sitemap *nome do seu Sitemap*” e clique em “Export data as CSV”<br></p>
-                <img src="{% static 'assets/print4.png' %}" alt="Quarto passo foto" style="width: 30rem;">
-              </li>
-              <li>Clique em “Download now!” e pronto, você baixou os dados raspados em formato CSV.</li>
-            </ol>
+              {% block content4 %}
+                {% placeholder "content4" %}
+              {% endblock content4 %}
           </div>
         </div>
-
       </div>
     </section><!-- End About Section -->
 
-
-    <!-- ======= About Section ======= -->
+        <!-- ======= About Section ======= -->
     <section id="about" class="about section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -143,6 +124,9 @@
       </div>
     </section><!-- End About Section -->
 
+
+  </main><!-- End #main -->
+
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -161,6 +145,7 @@
   <!-- Template Main JS File -->
   <script src="{% static 'assets/js/main.js' %}"></script>
   {% render_block "js" %}
+
 
 </body>
 
