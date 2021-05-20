@@ -1,0 +1,24 @@
+{% extends 'portal/index.html' %}
+{% block content %}
+  <h3>Artigos Científicos</h3>
+  <br>
+  <p>
+    <i>
+      "O conhecimento científico é extremamente importante para a
+      sociedade, pois é a partir dele que é possível a transformação social e tecnológica.
+      O conhecimento científico gerado por uma determinada sociedade consolida o saber
+      e desafia as estruturas cristalizadas, tidas como verdades absolutas"
+    </i> - Marta Valentim, Brazilian Journal of Information Science
+  </p>
+  <br>
+  <ul class="list-group">
+    {% for article in articles %}
+    <li class="list-group-item">
+      <a href="{{article.url}}">
+        {{ article.title }}
+      </a>
+      <p>Autores: {{ article.authors }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
