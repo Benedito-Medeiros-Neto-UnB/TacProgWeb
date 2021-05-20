@@ -1,4 +1,4 @@
-Django==2.2.8
+Django==2.2.20
 django-password-reset==2.0
 django-progressive-web-app==0.1.1
 pytz==2019.1
