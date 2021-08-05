@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>BOOK LIST</title>
+</head>
+<body>
+    <table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Download</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+            <tr>
+                <th>{{ book.title }}</th>
+                <th>{{ book.author }}</th>
+                {% if book.pdf.url != None %}
+                    <th> <a href="{{ book.pdf.url }}" class="btn btn-primary btn-sm"> download</a>  </th>
+                {% endif %}
+             </tr>
+        {% endfor %}
+    </tbody>
+</table>
+   
+</body>
+</html>

@@ -1,0 +1,2 @@
+https://observablehq.com/@guilhermesfl/laboratorio-de-javascript
+lab java script

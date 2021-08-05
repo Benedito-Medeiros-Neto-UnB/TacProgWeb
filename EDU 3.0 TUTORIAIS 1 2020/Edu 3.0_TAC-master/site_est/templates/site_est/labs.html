@@ -1,0 +1,148 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EDUCAÇÃO 3.0</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="{% static 'site_est/css/main.css' %}">
+		<link rel="stylesheet" href="{% static 'site_est/css/labs.css' %}">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="http://localhost:8000">EDUCAÇÃO 3.0</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="http://localhost:8000">Home</a></li>
+					<li><a href="http://localhost:8000/generic">Educação + Tecnologia</a></li>
+					<li><a href="http://localhost:8000/aula">Aula Invertida</a></li>
+					<li><a href="http://localhost:8000/web">WEB e Suas Evoluções</a></li>
+					<li><a href="http://localhost:8000/edu">Educação e Suas Evoluções</a></li>
+					<li><a href="http://localhost:8000">Quiz:: Teste Seus Conhecimentos</a></li>
+					<li><a href="http://localhost:8000/labs">Tutoriais Sobre Tecnologia</a></li>
+				</ul>
+			</nav>
+
+		{% for book in books %}
+			<div class="container">
+				<!-- The Modal -->
+				<div class="modal fade" id="myModal_{{ forloop.counter }}">
+					<div class="modal-dialog modal-lg" style="margin-top: 100px; height: 500px;">
+						<div class="modal-content" style=" background-color: #5e5959; width: 100%; height: 500px;">
+							<!-- Modal Header -->
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							
+							<!-- Modal body -->
+							{% if book.pdf.url != None %}
+								<div class="modal-body">
+									<iframe id="encoder_iframe" height=100% width="100%" src="{{ book.pdf.url }}"></iframe>
+								</div>
+							{% endif %}
+						</div>
+					</div>
+				</div>
+  			</div>
+		{% endfor %}
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>tutoriais sobre tecnologia</h1>
+			</div>
+			
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Introdução</h2>
+						</header>
+						
+						<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCom a proposta de colocar em prática o método de ensino de acordo com o modelo da Educação 3.0, a disciplina Programação Web(Tópicos Avançados em Computadores) - TAC - UnB propôs que os alunos estudassem determinados tópicos e os apresentassem  em sala de aula, após isso esse conteúdo foi disponibilizado em tutoriais de forma que pudesse ser repassado o conhecimento para outras pessoas, que basicamente é a proposta deste site.</p>
+						<!-- Button to Open the Modal -->
+						
+						<div class="tutos">
+							{% for book in books %}
+							<hr />
+								<div class="t">
+									{% if book.link == None %}
+										<a href="" data-toggle="modal" data-target="#myModal_{{ forloop.counter }}">
+											<img class="image-tuto" src="{% static "site_est/images/t1.png" %}" alt="Pic 01">
+										</a>
+									{% else %}
+										<a class="logo" target="_blank" href={{ book.link }}>
+											<img class="image-tuto" src="{% static "site_est/images/t1.png" %}" alt="Pic 01">
+										</a>
+									{% endif %}
+									<div class="t1">
+										<p class="titulo"><strong>Tutorial:</strong> {{book.title}}</p>
+										<p class="titulo"><strong>Autor:</strong> {{book.author}}</p>
+										
+									</div>
+								</div>
+								<hr />
+							{% endfor %}
+						
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Sobre</h3>
+							<p>Com a proposta de colocar em prática o método de ensino de acordo com o modelo da Educação 3.0, a disciplina Programação Web(Tópicos Avançados em Computadores) - TAC - UnB propôs o desenvolvimento deste projeto.</p>
+						</section>
+						<section>
+							<h4>Professores</h4>
+							<ul class="alt">
+								<li><a href="#">Benedito Medeiros Neto</a></li>
+								<li><a href="#">Edison Ishikawa</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Redes Sociais</h4>
+							<ul class="plain">
+								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; ribasProject
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+
+			<script src="{% static 'site_est/js/jquery.min.js' %}"></script>
+			<script src="{% static 'site_est/js/browser.min.js' %}"></script>
+			<script src="{% static 'site_est/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'site_est/js/util.js' %}"></script>
+			<script src="{% static 'site_est/js/main.js' %}"></script>
+
+			<script src="{% static 'site_est/js/script.js' %}"></script>
+
+	</body>
+</html>

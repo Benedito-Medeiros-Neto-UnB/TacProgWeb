@@ -1,0 +1,32 @@
+.image-tuto {
+    width: 100px;
+}
+
+.tutos {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+}
+
+.titulo {
+    width: auto;
+    color: white;
+}
+
+.t {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url("/static/site_est/images/t.png");
+    margin-bottom: 20px;
+}
+
+.t1 {
+    margin-left: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.new-img {
+    background-image: url("/static/site_est/images/t.png");
+}
