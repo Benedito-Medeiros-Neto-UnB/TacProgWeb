@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load fontawesome_5 %}
+
+{% block content %}
+    <div class="news-form">
+        <p> <a class="back-link" href="{% url 'noticia_list' %}">{% fa5_icon 'chevron-left' 'fas' %} Voltar</a> </p>
+        <form method="post">
+          {% csrf_token %}
+          <h3>Publicado por</h3>
+          <span id="open-users" onclick="openUsers()">{% fa5_icon 'chevron-down' 'fas' %} Exibir usuários</span>
+          <div id="users-container">
+            {{ form.usuarios }}
+          </div>
+          <h3>Título</h3>
+          <p>{{ form.titulo }}</p>
+          <div class="error">{{ form.titulo.errors }}</div>
+          <h3>Texto</h3>
+          <p>{{ form.texto }}</p>
+          <div class="error">{{ form.texto.errors }}</div>
+          <h3>Prioridade</h3>
+          <p>{{ form.prioridade }}</p>
+          <div class="error">{{ form.prioridade.errors }}</div>
+          <h3>Link externo</h3>
+          <p>{{ form.link_externo }}</p>
+          <div class="error">{{ form.link_externo.errors }}</div>
+          <h3 class="link-tip">Link video</h3>
+          <small>Vídeos não poderão ser exibidos na prévia, mas aparecerão normalmente na versão publicada.</small>
+          <p>{{ form.link_video }}</p>
+          <div class="error">{{ form.link_video.errors }}</div>
+          <h3 class="link-tip">Link imagem</h3>
+          <small>Caso a imagem não apareça na prévia, verifique se o link está correto.</small>
+          <p>{{ form.link_foto }}</p>
+          <div class="error">{{ form.link_foto.errors }}</div>
+          <h3 class="link-tip">Autoria da imagem</h3>
+          <small>Caso seja inserida imagem, utilize este campo para determinar a autoria.</small>
+          <p>{{ form.autoria_midia }}</p>
+          <div class="error">{{ form.autoria_midia.errors }}</div>
+          <button class="link" type="submit">Publicar</button>
+          <a class="link-outline" href="{% url 'noticia_confirm_delete' noticia.id %}">Remover</a>
+        </form>
+        <h3>Prévia da Notícia:</h3>
+      </div>
+    <div class="preview-news">
+      <div class="newsList">
+        <div class="dateDivider">08/10/2088</div>
+        <div class="newsContent">
+          <div id="preview-titulo" class="headline upper">Título</div>
+          <div class="author"><b>Por Autor</b></div>
+          <div class="adtInfo">
+            <div class="timestamp">08/10/2088 09h28</div>
+          </div>
+          <div class="media">
+            <div>
+              <center><img class="newsImg" src="" alt="A imagem ou vídeo aparecerá aqui."></center>
+              <center><figcaption id="preview-autoria"></figcaption></center>
+            </div>    
+          </div>
+          <div class="texto">
+            <p id="preview-texto">Texto</p>
+          </div>
+            <a class="link" id="preview-link" href="" target="_blank">Leia mais</a>
+        </div>
+      </div>
+    </div>
+    <div class="endPage"></div>
+
+    <script>
+      $( document ).ready(function() {
+        var titulo_input = $("#id_titulo")
+        var text_input = $("#id_texto")
+        var link_input = $("#id_link_externo")
+        var foto_input = $("#id_link_foto")
+        var autoria_input = $("#id_autoria_midia")
+
+        $("#preview-titulo").text(titulo_input.val())
+        $("#preview-texto").text(text_input.val())
+        $("#preview-link").attr("href", link_input.val())
+        $(".newsImg").attr("src", foto_input.val())
+        $("#preview-autoria").text(autoria_input.val())
+
+        titulo_input.change(function() {
+          $("#preview-titulo").text(titulo_input.val())
+        });
+
+        text_input.change(function() {
+          $("#preview-texto").text(text_input.val())
+        });
+
+        link_input.change(function() {
+          $("#preview-link").attr("href", link_input.val())
+        });
+
+        foto_input.change(function() {
+          $(".newsImg").attr("src", foto_input.val())
+        });
+
+        autoria_input.change(function() {
+          $("#preview-autoria").text(autoria_input.val())
+        });
+
+        var today = new Date()
+        var time = new Date()
+
+        today = String(today.getDate()).padStart(2, '0') + '/' + String(today.getMonth() + 1).padStart(2, '0') + '/' + today.getFullYear()
+        $(".dateDivider").text(today)
+        today += " " + ('0' + time.getHours()).slice(-2) + ":" + ('0' + time.getMinutes()).slice(-2)
+        $(".timestamp").text(today)
+
+      });
+
+      function openUsers () {
+        $("#users-container").slideToggle("slow")
+        $("#open-users i").toggleClass("fa-chevron-down")
+        $("#open-users i").toggleClass("fa-chevron-up")
+      }
+    </script>
+{% endblock %}

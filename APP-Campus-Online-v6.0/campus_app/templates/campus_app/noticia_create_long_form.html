@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load fontawesome_5 %}
+
+{% block content %}
+    <div class="news-form">
+        <p> <a class="back-link" href="{% url 'noticia_list' %}">{% fa5_icon 'chevron-left' 'fas' %} Voltar</a> </p>
+        <form method="post">
+            {% csrf_token %}
+            <h3 class="link-tip">Publicado por</h3>
+            {{ noticia_form.usuarios }}
+            <div class="error">{{ noticia_form.usuarios.errors }}</div>
+
+            <h3 class="link-tip">Prioridade</h3>
+            {{ noticia_form.prioridade }}
+            <div class="error">{{ noticia_form.prioridade.errors }}</div>
+
+            <h3 class="link-tip">Link da Imagem</h3>
+            {{ noticia_form.link_foto }}
+            <div class="error">{{ noticia_form.link_foto.errors }}</div>
+
+            <h3 class="link-tip">Autoria Mídia</h3>
+            {{ noticia_form.autoria_midia }}
+            <div class="error">{{ noticia_form.autoria_midia.errors }}</div>
+
+            <h3 class="link-tip">Link do vídeo</h3>
+            {{ noticia_form.link_video }}
+            <div class="error">{{ noticia_form.link_video.errors }}</div>
+
+            <h3 class="link-tip"> Titulo da matéria </h3>
+            {{ noticia_form.titulo }}
+            <div class="error">{{ noticia_form.titulo.errors }}</div>
+
+            <h3 class="link-tip">Resumo da notícia </h3>
+            {{ noticia_form.texto }}
+            <div class="error">{{ noticia_form.texto.errors }}</div>
+            
+            <button class="link" type="submit">Publicar</button>
+            
+        </form>
+
+        <h3>Prévia da Notícia:</h3>
+    </div>
+    
+{% endblock %}

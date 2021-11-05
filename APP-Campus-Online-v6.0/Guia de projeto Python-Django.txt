@@ -1,0 +1,48 @@
+Passo 1: Instalar o ambiente virtual na pasta do projeto.
+Comando: virtualenv venv
+Observação: Caso esteja trabalhando no Windows sem uma IDE como PyCharm, é necessário ativar e desativar o ambiente virtual.
+O arquivo activate ativa o ambiente e o deactivate o desativa. Ambos scripts se encontram na pasta Script do venv criado.
+
+Passo 2: Instalar o Django mais atual.
+Comando: pip install django==2.2.2
+Observação: Para testar a instalação do Django, inicie o Python e execute o comando "import django". Caso não apresente
+nenhum erro, significa que o Djanjo está instalado. Caso queira checar a versão, basta executar o comando "django.get_version()".
+
+Passo 3: Criar o projeto.
+Comando: django-admin startproject campus_online .
+
+Passo 4: Alterar linguagem e time zone.
+No arquivo Settings.py procurar a variável language e substituir en-us por pt-br.
+Para time zone, usar America/Sao_Paulo.
+
+Passo 5: Teste a instalação do django rodando o servidor local.
+Comando: python manage.py runserver
+
+Passo 6: Instalar o MySQL.
+Observação: Utilizar o método de encriptação de chave legado que corresponde ao 
+plugin mysql_native_password. O cashing_sha2_password não é suportado pelo Django.
+
+Passo 7 (opcional): Criar o DB da aplicação caso não exista.
+Comando: create database campus_online_app;
+
+Passo 8: Configurar o BD no arquivo Settings.py conforme a seguinte configuração.
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': os.environ.get('DB_NAME', 'campus_app_v4'),
+        'USER': os.environ.get('DB_USER', 'postgres'),
+	    'PASSWORD': os.environ.get('DB_PASS', '123456'),
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
+
+Passo 9: Instalar o cliente MySQL via pip.
+Comando: pip install mysqlclient
+Observação: Se a instalação falhar no WINDOWS, a maneira mais fácil de solucionar é a instalação de um whl de terceiro.
+No site https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysqlclient procure pelo MySQL Client correspondente a sua
+versão de Python. Para a versão 3.7 x32 aversão correta é a mysqlclient-1.4.2-cp37-cp37m-win32.whl. Depois de 
+baixado basta instalar com o comando "pip install "caminho de onde o arquivo foi baixado". 
+
+Passo 10: Criar a aplicação.
+Comando: python manage.py startapp campus_app
