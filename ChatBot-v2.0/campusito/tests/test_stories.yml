@@ -1,0 +1,90 @@
+# #### This file contains tests to evaluate that your bot behaves as expected.
+# #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+# stories:
+# - story: happy path 1
+#   steps:
+#   - user: |
+#       oi
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       incrível
+#     intent: mood_great
+#   - action: utter_happy
+
+# - story: happy path 2
+#   steps:
+#   - user: |
+#       hey
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       legal
+#     intent: mood_great
+#   - action: utter_happy
+#   - user: |
+#       tchau tchau
+#     intent: goodbye
+#   - action: utter_goodbye
+
+# - story: sad path 1
+#   steps:
+#   - user: |
+#       oi
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       não to bem
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       sim
+#     intent: affirm
+#   - action: utter_happy
+
+# - story: sad path 2
+#   steps:
+#   - user: |
+#       oi
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       não to bem
+#     intent: mood_unhappy
+#   - action: utter_cheer_up
+#   - action: utter_did_that_help
+#   - user: |
+#       não
+#     intent: deny
+#   - action: utter_goodbye
+
+# - story: perguntando ao bot
+#   steps:
+#   - user: |
+#       ola
+#     intent: greet
+#   - action: utter_greet
+#   - user: |
+#       tudo bem?
+#     intent: how_are_you
+#   - action: utter_how_are_you
+#   - user: |
+#       nao
+#     intent: deny 
+#   - action: utter_goodbye
+
+# - story: diga tchau
+#   steps:
+#   - user: |
+#       tchau tchau
+#     intent: goodbye
+#   - action: utter_goodbye
+
+# - story: desafiando o bot
+#   steps:
+#   - user: |
+#       vc é um bot?
+#     intent: bot_challenge
+#   - action: utter_iamabot

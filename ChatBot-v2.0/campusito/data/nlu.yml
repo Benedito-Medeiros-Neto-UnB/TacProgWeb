@@ -1,0 +1,228 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - oi
+    - Oi
+    - Olá
+    - Saudações
+    - ola
+    - bom dia
+    - boa noite
+    - boa tarde
+    - olá querido
+    - olá bot
+    - vamos lá
+    - hey
+    - bomdia
+    - boanoite
+    - alo
+  
+- intent: how_are_you
+  examples: |
+    - tudo bem?
+    - tudo bem
+    - como está?
+    - como vai?
+    - tudo certo?
+    - tudo na paz?
+    - de boas?
+    - ta suave?
+    - tranquilidade?
+    - suavidade?
+    - na boa?
+
+- intent: goodbye
+  examples: |
+    - boa tarde
+    - te vejo logo
+    - até breve
+    - te vejo depois
+    - boa noite
+    - tchau
+    - adeus
+    - tenha um bom dia
+    - te vejo por aí
+    - tchau tchau
+    - até outro momento
+
+- intent: affirm
+  examples: |
+    - sim
+    - yes
+    - uhum
+    - claro
+    - está claro
+    - correto
+
+- intent: deny
+  examples: |
+    - não
+    - nao
+    - n
+    - nunca
+    - acho que não
+    - não gosto disso
+    - sem chance
+    - na real, não
+
+- intent: mood_great
+  examples: |
+    - perfeito
+    - incrível
+    - legal
+    - sentindo como um rei
+    - maravilhoso
+    - eu estou me sentindo muito bem
+    - eu estou ótimo
+    - eu estou incrível
+    - eu vou salvar o mundo
+    - extasiado
+    - extremamente bom
+    - demais
+    - tão bom
+    - tão perfeito
+
+- intent: mood_unhappy
+  examples: |
+    - meu dia foi horrível
+    - eu estou triste
+    - eu não me sinto muito bem
+    - estou bem desapontado
+    - super mal
+    - eu estou tão triste
+    - triste
+    - muito triste
+    - infeliz
+    - não to bem
+    - não muito bem
+    - extremamente triste
+    - tão tristee
+    - tão triste
+
+- intent: bot_challenge
+  examples: |
+    - Você é um bot?
+    - Você é humano?
+    - vc é um bot?
+    - vc é humano?
+    - eu estou falando com um bot?
+    - eu estou falando com um humano?
+
+- intent: pauta
+  examples: |
+    - pauta
+    - qual a pauta?
+    - qual o sua sugestão?
+    - sugestão de pauta
+    - sugerir pauta
+    - sugiro uma pauta
+    
+- intent: direito_a_replica
+  examples: |
+    - direito a replica
+    - direito de replica
+    - direito de réplica
+    - direito
+    - replica
+    - direito a réplica
+    - sugestão de direito a réplica 
+    - sugestao de direito a replica 
+    
+- intent: sugestao
+  examples: |
+    - gostaria de fazer uma sugestão
+    - quero fazer uma sugestão
+    - gostaria de fazer uma sugestao
+    - sugestao
+    - minha sugestão
+    - sugerir
+    - sugestão
+    - sugestões
+
+- intent: problemas_tecnicos
+  examples: |
+    - Problemas Técnicos
+    - Problemas técnicos
+    - problema 
+    - problemas tecnicos
+    - problemas técnicos
+    - problema
+    - técnico
+    - erro
+    - encontrei um bug
+    - bug
+    - encontrei um erro
+    - não consigo
+    - bugado
+
+- intent: correcoes
+  examples: |
+    - correcao
+    - corrigir
+    - correções
+    - correção
+    - Correções
+
+- intent: erro_portugues
+  examples: |
+    - erro de português
+    - portugues
+    - encontrei um erro de portugues
+    - portugues errado
+    - português
+
+- intent: info_incorreta
+  examples: |
+    - tem um erro de informação
+    - informação incorreta
+    - informacao incorreta
+    - incorreta
+    - informacoes incorretas
+    - informações incorretas
+
+- intent: reclamacao
+  examples: |
+    - gostaria de fazer uma reclamacao
+    - Reclamações
+    - reclamacao
+    - reclamação
+    - reclamar
+    - reclamações
+    - reclamacoes
+
+- intent: outro_motivo
+  examples: |
+    - outro 
+    - outros
+    - outro motivo
+    - outros moticos
+    - outra
+    - outras
+
+- intent: anonimato
+  examples: |
+    - anonimato
+    - anônimo
+    - anon
+    - anonimo
+
+- intent: identificar
+  examples: |
+    - identificar
+    - me indentificar
+    - indentifico
+    - indentidade
+
+- intent: volta_servico
+  examples: |
+    - Quando o servico volta?
+    - qual a previsao de volta?
+    - quando acabam as ferias?
+    - quando tera algum funcionario?
+    - queria falar com um funcionario
+    - gostaria de saber quando volta
+    - volta do servico
+    - volta do atendimento
+  

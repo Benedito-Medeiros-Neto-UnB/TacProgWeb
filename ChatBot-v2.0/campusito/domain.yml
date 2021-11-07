@@ -1,0 +1,151 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- how_are_you:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
+- mood_great:
+    use_entities: true
+- mood_unhappy:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- pauta:
+    use_entities: true
+- sugestao:
+    use_entities: true
+- problemas_tecnicos:
+    use_entities: true
+- correcoes:
+    use_entities: true
+- erro_portugues:
+    use_entities: true
+- info_incorreta:
+    use_entities: true
+- reclamacao:
+    use_entities: true
+- outro_motivo:
+    use_entities: true
+- anonimato:
+    use_entities: true
+- outras:
+    use_entities: true
+- identificar:
+    use_entities: true
+- volta_servico:
+    use_entities: true
+- direito_a_replica:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: |
+      "Olá! Eu sou o Campusito, a foquinha símbolo do Campus Multiplataforma. Nosso jornal
+      está em período de transição no momento e voltamos a funcionar em breve, mas nada vai me
+      impedir de ouvir tudo o que você tem a dizer e responder assim que possível! Sobre o que
+      gostaria de me falar hoje?"
+      - Sugestões
+      - Problemas Técnicos
+      - Correções
+      - Reclamações
+  utter_default_nao_entendimento:
+  - text: |
+      Desculpe, ainda não sei falar sobre isso ou talvez não consegui entender direito
+      Você pode perguntar de novo de outro jeito?
+  - text: |
+      Hummmm... Não sei se entendi. Pode escrever de outra forma?
+  - text: |
+      Acho que não te entendi, você pode me perguntar de novo usando outras palavras?
+  - text: |
+      Vamos tentar mais uma vez? Eu não consegui te entender direito, me pergunta de outro jeito?
+  utter_how_are_you:
+  - text: Tudo certo, qual serviço gostaria de solicitar? Farei o possível para solucionar seu problema!
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Aqui vai algo para te animar:'
+  utter_did_that_help:
+  - text: Isso te ajudou?
+  utter_happy:
+  - text: Incrível, continue!
+  utter_goodbye:
+  - text: Tchau
+  utter_iamabot:
+  - text: Eu sou o campusito, estou aqui para te ajudar.
+  utter_continuar_conversa:
+  - text: |
+      E aí, qual nosso próximo assunto?
+  utter_sugestao:
+  - text: ' Você deseja fazer uma sugestão de pauta? Ou outras sugestões?'
+  utter_pauta:
+  - text: |-
+      Jornalismo é algo colaborativo, sabia? Por isso, pode ficar a vontade para sugerir pautas que você viu por aí ou que está envolvido! Ó, como eu disse, no momento não estamos disponíveis, mas veremos sua sugestão assim que possível. Como fonte, você pode ser identificado na matéria ou permanecer no anonimato. Independente da escolha, pediremos seu contato para conversarmos no futuro. 
+      Então, deseja ser identificado ou permanecer em anonimato?
+  utter_input_texto:
+  - text: Por favor, me diga suas considerações.
+  utter_outras:
+  - text: Sempre apreciamos sugestões! Como eu disse, estamos indisponíveis no momento, mas veremos sua sugestão assim que possível.
+  utter_prob_tecnicos:
+  - text: Para ajudar a galera da TI, me informe o link que está com erro e que problema você encontrou nesse link?
+  utter_correcoes:
+  - text: |
+      Eita! Parece que cometemos um erro! Para ajudar nosso time, especifique qual foi o erro: 
+      - Informações incorretas 
+      - Erros de português 
+      - Erros técnicos 
+  utter_info_incorreta:
+  - text: Poxa,​ mil desculpas! Nossa credibilidade vale muito para nós. Poderia nos indicar o link de onde erramos e nos contar o erro que cometemos?
+  utter_erro_portugues:
+  - text: Vixe! Acabamos deixando passar essa! Mas a gente ama saber que nossos leitores são super atentos! Poderia nos indicar o link de onde erramos e especificar que erro cometemos?
+  utter_reclamacoes:
+  - text: |-
+      Sou todo ouvidos. Qual é o conteúdo da sua insatisfação? 
+      - Direito de réplica 
+      - Informações incorretas 
+      - Erros de português 
+      - Problemas técnicos 
+      - Outro motivo 
+       
+  utter_problemas_tecnicos:
+  - text: Pedimos desculpas pelos problemas técnicos, estaremos resolvendo o mais breve possível. Poderia nos descrever qual o problema técnico que está acontecendo?
+  utter_direito_replica:
+  - text: Nós sentimos sinceramente por quaisquer prejuízos de imagem injustos que cometemos. Para podermos nos redimir, você poderia indicar o link da matéria à qual se refere?
+  utter_dia_retorno:
+  - text: Como eu disse, estamos indisponíveis no momento, mas resolveremos seu caso assim que possível. Para nos situar melhor, fale mais sobre a situação.
+  utter_outro_motivo:
+  - text: Nós sentimos sinceramente por quaisquer erros que cometemos. Para podermos nos redimir, fale mais sobre sua reclamação.
+  utter_agradecimentos:
+  - text: |
+      Muito obrigado pelas informações, você gostaria de se identificar para acompanhar sua solicitação?
+      - Sim
+      - Não
+  utter_feedback_completo:
+  - text: Guardando informação...
+  utter_resp:
+  - text: Descreva sua sugestão que iremos responder quando possível. Por favor, fale sobre o assunto e insira imagens ou vídeos para ilustrar melhor a pauta. Não se esqueça de nos dizer se podemos reproduzir esse conteúdo.
+  utter_final:
+  - text: Se puder te ajudar em algo mais, só me chamar.
+  utter_pergunta_identificacao:
+  - text: Qual é o seu nome?
+  utter_pergunta_contato:
+  - text: Qual é o seu contato?
+  utter_resposta_positiva_identificacao:
+  - text: Obrigado, suas mensagens foram salvas!
+  utter_resposta_negativa_identificacao:
+  - text: Sem problemas, suas mensagens foram salvas!
+actions: []
+forms: {}
+e2e_actions: []
