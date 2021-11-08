@@ -1,0 +1,28 @@
+Para fazer:
+
+- Inserir contador de caracteres no campo texto da guia de cadastro de notícia.
+
+Feito (v4):
+
+- Inserido o preview em cadastro de notícia.
+- Alterações visuais para adequação ao novo padrão do Campus.
+
+Feito (v5):
+
+- Criação e edição de notícia só mostram usuários ativos ou que tenham escrito a matéria.
+- Página de edição de notícia adequada para ter o mesmo layout da página de cadastro.
+- Dataset de desenvolvimento atualizado.
+- Lista de autores alterada para mostrar o nome ao invés do username.
+- Corrigida a página de remoção de notícia. Ajustes no layout.
+- Corrigido o redirecionamento da pesquisa via calendário.
+- Corrigido o redirecionamento do cadastro de usuário para a página de usuários ao invés de "meu perfil".
+- Corrigido o bug de adição de perfil quando do cadastro de usuário.
+- Corrigido o layout da página de notícias por dia.
+- Incluído método para tornar a manipulação do número de WhatsApp do Campus dinâmico ao invés de estático.
+- Centralizada a mensagem de "Nenhuma notícia postada no dia selecionado".
+- Corrigido o ícone das abas da área de administração que ainda eram da v3.
+- Incluído o campo para registro da autoria da imagem.
+- Alteradas as homepages para mostrar a informação de autoria da imagem.
+- Ícone do APP atualizado para a identidade visual da v4.
+- A hora da publicação no preview da publicação foi corrigida para mostrar corretamente horários com 0 (01:05).
+- Adicionada a informação de autoria da imagem ao preview da publicação.

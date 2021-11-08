@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div id="Home">
+    <div class="app-content">
+      <div id="calendar-region">
+        <h3>
+          <input class="calendar-button" type="button" id="calendario" value="{{ data | date:"d/m/Y" }}"
+           onchange="requestNews()"/>
+        </h3>
+      </div>
+      <div class="app">
+        <a class="calendar-button" type="button" href="{% url 'home' %}"><b>Inicio</b></a>
+      </div>
+      <br>
+      <div class="newsList">
+        <div class="newsItem">
+          {% if object_list %}
+            {% for noticia in object_list %}
+              <div class="dateDivider">{{ noticia.data_publicacao | date:"d/m/Y" }}</div>
+              <div class="newsContent">
+                <div class="headline upper">{{ noticia.titulo }}</div>
+                {% if noticia.usuarios %}
+                  <div class="author"><b>Por </b>
+                    {% for u in noticia.usuarios.all %}
+                      <spam> {{ u.first_name }} {{ u.last_name }} | </spam>
+                    {% empty %}
+                    {% endfor %}
+                  </div>
+                {% endif %}
+                <div class="adtInfo">
+                  <div class="timestamp">{{ noticia.data_publicacao | date:"d/m/Y  H:i" }}</div>
+                </div>
+                <div class="media">
+                  {% if noticia.link_video %}
+                    <iframe class="newsVideo" src="{{ noticia.link_video }}"></iframe>
+                    {% else %}
+                      {% if noticia.link_foto %}
+                        <div>
+                          <center><img class="newsImg" src="{{ noticia.link_foto }}" alt="Imagem"></center>
+                          {% if noticia.autoria_midia %}
+                            <center><figcaption>{{ noticia.autoria_midia }}</figcaption></center>
+                          {% endif %}
+                        </div>
+                      {% endif %}
+                  {% endif %}
+                </div>
+                <div class="texto">
+                  <p>{{ noticia.texto }}</p>
+                </div>
+                {% if noticia.link_externo %}
+                  <a class="link" href="{{ noticia.link_externo }}" target="_blank">Leia mais</a>
+                {% endif %}
+              </div>
+            {% endfor %}
+          {% else %}
+            <center><h3>Nenhuma notícia postada no dia selecionado.</h3></center>
+          {% endif %}
+        </div>
+        <div style="height: 100px;"></div>
+      </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $( "#calendario" ).datepicker({
+          showButtonPanel: true,
+          dateFormat: 'yy/m/dd',
+          changeMonth: true,
+          changeYear: true,
+          maxDate: 0,
+          minDate: "-2y",
+          currentText: "Hoje",
+          closeText: "Fechar",
+          dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+          dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+          dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+          monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+          monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+        });
+      });
+      function requestNews () {
+        let url = window.location.origin + '/noticia_archive_day/' + document.getElementById("calendario").value;
+        window.location.href = url;
+      };
+    </script>
+  </div>
+{% endblock %}

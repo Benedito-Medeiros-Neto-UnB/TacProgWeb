@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load fontawesome_5 %}
+
+{% block content %}
+    <div class="container" style="margin-left: 1em;margin-right: 1em;">
+        <div id="calendar-region">
+            <h3>
+                <input class="calendar-button" type="button" id="calendario" value="{{ data | date:"d/m/Y" }}"
+                onchange="requestNews()"/>
+            </h3>
+        </div>
+
+        <div class="adtInfo">
+            <div class="timestamp">{{ noticia.data_publicacao | date:"d/m/Y  H:i" }}</div>
+        </div>
+
+        <div class="headline upper"> {{noticia.titulo}} </div>
+
+        <div class="media">
+            {% if video.link_video_long_form %}
+                <iframe class="newsVideo" src="{{ video.link_video_long_form }}"></iframe>
+            {% endif %}
+        </div>
+        
+        <div class="media">
+            {% if imagem.link_foto_long_form %}
+            <center><img class="newsImg" src="{{ imagem.link_foto_long_form }}" alt="Imagem"></center>
+                {% if imagem.autoria_midia_imagem %}
+                    <center><figcaption>{{ imagem.autoria_midia_imagem }}</figcaption></center>
+                {% endif %}
+            {% endif %}
+        </div>
+
+        <div class="headline upper"> {{texto_materia.subtitulo}} </div>
+        <div class="texto">
+            <p> {{texto_materia.texto_materia}} </p>
+        </div>
+
+        <script>
+            $(function () {
+                $("#calendario").datepicker({
+                    showButtonPanel: true,
+                    dateFormat: 'yy/m/dd',
+                    changeMonth: true,
+                    changeYear: true,
+                    maxDate: 0,
+                    minDate: "-2y",
+                    currentText: "Hoje",
+                    closeText: "Fechar",
+                    dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'],
+                    dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+                    dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+                    monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+                    monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+                });
+            });
+            function requestNews () {
+                let url = 'noticia_archive_day/' + document.getElementById("calendario").value;
+                window.location.href = url;
+            };
+        </script>
+    </div>
+{% endblock %}

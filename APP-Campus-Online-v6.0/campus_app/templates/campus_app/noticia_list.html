@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <h2 class="section-title">Notícias</h2>
+  <div class="panel-links">
+    <a class="link" href="{% url 'home' %}">Home</a>
+    <a class="link" href="{% url 'dashboard' %}">Meu Painel</a>
+    <a class="link" href="{% url 'noticia_list' %}">Notícias</a>
+    <a class="link" href="{% url 'whatsapp_account_list' %}">WhatsApp</a>
+    {% if perms.auth.view_user %}
+      <a class="link" href="{% url 'users' %}">Usuários</a>
+    {% endif %}
+    <a class="link" href="{% url 'edit_password' %}">Editar Senha</a>
+  </div>
+  <div class="news-list">
+    <a class="link" href="{% url 'noticia_create_form' %}"><b>Nova Publicação</b></a>
+    <a class="link" href="{% url 'noticia_create_long_form' %}"><b>Nova Publicação Long Form</b></a>
+    <hr>
+    <ul>
+      {% for noticia in noticias %}
+          <li class="news-management">
+            {% if user.is_superuser and noticia.link_externo or user in noticia.usuarios.all and  noticia.link_externo %} 
+              <a class="link-outline" href="{% url 'noticia_update_form' noticia.id %}"><b>Editar</b></a>
+            {% else %}
+              <a class="link-outline" href="{% url 'noticia_update_long_form' noticia.id %}"><b>Editar</b></a>  
+              {% for p in perfil %}
+                {% if p.name == "Editor"%}
+                  <a class="link-outline" href="{% url 'noticia_update_form' noticia.id %}"><b>Editar</b></a>
+                {% endif %}        
+              {%endfor%}
+            {% endif %}
+            <span class="title"> {{ noticia.titulo }}</span>
+            <p class="priority"><b>Prioridade: </b>{{ noticia.prioridade }} </p>
+            <p class="date"><b>Data de publicação: </b>{{ noticia.data_publicacao }}</p>
+          </li>
+          <hr>
+      {% endfor %}
+    </ul>
+  </div>
+  <div style="height: 100px;"></div>
+{% endblock %}

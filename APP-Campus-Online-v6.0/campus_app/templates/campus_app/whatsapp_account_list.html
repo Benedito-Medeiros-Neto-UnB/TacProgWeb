@@ -1,0 +1,21 @@
+{% extends "base_control.html" %}
+
+{% block content %}
+  <center><h1>Número do WhatsApp</h1></center>
+  <div class="news-list">
+    {% if whatsapp == None %}
+      <a class="link" href="{% url 'whatsapp_account_create_form' %}"><b>Novo número</b></a>
+    {% endif %}
+    <hr>
+    <ul>
+      {% for account in whatsapp_accounts %}
+          <li class="news-management">
+            <a class="link-outline" href="{% url 'whatsapp_account_update_form' account.cod %}"><b>Editar</b></a>
+            <span class="title">Número de WhatsApp cadastrado: {{ account.numero_telefone }}</span>
+          </li>
+          <hr>
+      {% endfor %}
+    </ul>
+  </div>
+  <div style="height: 100px;"></div>
+{% endblock %}
