@@ -1,0 +1,45 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Create identity file
+        env:
+          DEPLOYMENTKEY: ${{ secrets.AWS_LIGHTSAIL_UNB }}
+        run: |
+          echo "$DEPLOYMENTKEY" | base64 --decode  >deployment.key
+          chmod 400 deployment.key
+      - name: Update this on production server
+        run: |
+          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 git -C /home/django_websites/WikiJour-Data status
+          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 git -C /home/django_websites/WikiJour-Data pull
+          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 pip3 install -r /home/django_websites/WikiJour-Data/requirements.txt
+          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 python3 /home/django_websites/WikiJour-Data/manage.py migrate
+          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 python3 /home/django_websites/WikiJour-Data/manage.py test
+          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 python3 /home/django_websites/WikiJour-Data/manage.py collectstatic  --noinput -v 1
+          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 sudo systemctl reload apache2
+
+#          ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -i deployment.key ubuntu@35.80.178.89 python3 /home/django_websites/WikiJour-Data/manage.py runserver 0.0.0.0:8000 &
+
