@@ -23,7 +23,8 @@ Instalando as dependências:
 pip install -r requeriments.txt
 ```
 
-#Treinamento
+# Treinamento
+
 Para treinar o chatbot, só entrar na pasta do campusito e digitar:
 
 ```
