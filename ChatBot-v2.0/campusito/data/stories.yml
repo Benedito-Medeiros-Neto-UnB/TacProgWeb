@@ -44,7 +44,8 @@ stories:
   - action: utter_pauta
   - intent: anonimato
   - action: utter_resp
-  # - action: action_input_text
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
   - action: utter_agradecimentos 
 
 - story: sugerir pauta 2
@@ -54,8 +55,27 @@ stories:
   - intent: pauta
   - action: utter_pauta
   - intent: identificar
+  - action: utter_resposta_positiva_identificacao
+  - action: utter_pergunta_identificacao
+  - intent: input_text_identificacao
+  - action: utter_pergunta_contato
+  - intent: input_text_contato
   - action: utter_resp
-  # - action: action_input_text
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_agradecimentos
+
+- story: sugerir pauta 3
+  steps: 
+  - intent: sugestao
+  - action: utter_sugestao
+  - intent: pauta
+  - action: utter_pauta
+  - intent: identificar
+  - action: utter_resposta_negativa_identificacao
+  - action: utter_resp
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
   - action: utter_agradecimentos
 
 
@@ -67,7 +87,8 @@ stories:
   - action: utter_outras
   - intent: anonimato
   - action: utter_resp
-  # - action: action_input_text
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
   - action: utter_agradecimentos 
 
 - story: sugerir outras 2
@@ -77,15 +98,31 @@ stories:
   - intent: outras
   - action: utter_outras
   - intent: identificar
+  - action: utter_resposta_positiva_identificacao
+  - action: utter_pergunta_identificacao
+  - intent: input_text_identificacao
+  - action: action_input_text_identificacao
+  - action: utter_pergunta_contato
+  - intent: input_text_contato
+  - action: action_input_text_contato
   - action: utter_resp
-  # - action: action_input_text
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
   - action: utter_agradecimentos
 
 - story: informacao errada
   steps:
   - intent: info_incorreta
   - action: utter_info_incorreta
-  # - action: action_input_text
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_pergunta_identificacao
+  - intent: input_text_identificacao
+  - action: action_input_text_identificacao
+  - action: utter_pergunta_contato
+  - intent: input_text_contato
+  - action: action_input_text_contato
+  - action: utter_resposta_positiva_contato
   - action: utter_agradecimentos
 
 - story: reclamacao de reportagem 1
@@ -94,14 +131,17 @@ stories:
   - action: utter_reclamacoes
   - intent: direito_a_replica
   - action: utter_direito_replica
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: affirm
   - action: utter_pergunta_identificacao
-  # - action: action_input_text
+  - intent: input_text_identificacao
+  - action: action_input_text_identificacao
   - action: utter_pergunta_contato
-  # - action: action_input_text
-  - action: utter_resposta_positiva_identificacao
+  - intent: input_text_contato
+  - action: action_input_text_contato
+  - action: utter_resposta_positiva_contato
   - action: utter_final
 
 - story: reclamacao de reportagem 2
@@ -110,13 +150,16 @@ stories:
   - action: utter_reclamacoes
   - intent: info_incorreta
   - action: utter_outro_motivo
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: affirm
   - action: utter_pergunta_identificacao
-  # - action: action_input_text
+  - intent: input_text_identificacao
+  - action: action_input_text_identificacao
   - action: utter_pergunta_contato
-  # - action: action_input_text
+  - intent: input_text_contato
+  - action: action_input_text_contato
   - action: utter_resposta_positiva_identificacao
   - action: utter_final
 
@@ -126,14 +169,17 @@ stories:
   - action: utter_reclamacoes
   - intent: erro_portugues
   - action: utter_erro_portugues
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: affirm
   - action: utter_pergunta_identificacao
-  # - action: action_input_text
+  - intent: input_text_identificacao
+  - action: action_input_text_identificacao
   - action: utter_pergunta_contato
-  # - action: action_input_text
-  - action: utter_resposta_positiva_identificacao
+  - intent: input_text_contato
+  - action: action_input_text_contato
+  - action: utter_resposta_positiva_contato
   - action: utter_final
 
 - story: reclamacao de reportagem 4
@@ -142,14 +188,17 @@ stories:
   - action: utter_reclamacoes
   - intent: problemas_tecnicos
   - action: utter_problemas_tecnicos
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: affirm
   - action: utter_pergunta_identificacao
-  # - action: action_input_text
+  - intent: input_text_identificacao
+  - action: action_input_text_identificacao
   - action: utter_pergunta_contato
-  # - action: action_input_text
-  - action: utter_resposta_positiva_identificacao
+  - intent: input_text_contato
+  - action: action_input_text_contato
+  - action: utter_resposta_positiva_contato
   - action: utter_final
 
 - story: reclamacao de reportagem 5
@@ -158,13 +207,16 @@ stories:
   - action: utter_reclamacoes
   - intent: outro_motivo
   - action: utter_outro_motivo
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: affirm
   - action: utter_pergunta_identificacao
-  # - action: action_input_text
+  - intent: input_text_identificacao
+  - action: action_input_text_identificacao
   - action: utter_pergunta_contato
-  # - action: action_input_text
+  - intent: input_text_contato
+  - action: action_input_text_contato
   - action: utter_resposta_positiva_identificacao
   - action: utter_final
 
@@ -174,8 +226,9 @@ stories:
   - action: utter_reclamacoes
   - intent: direito_a_replica
   - action: utter_direito_replica
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: deny
   - action: utter_resposta_negativa_identificacao
   - action: utter_final
@@ -186,8 +239,9 @@ stories:
   - action: utter_reclamacoes
   - intent: info_incorreta
   - action: utter_outro_motivo
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: deny
   - action: utter_resposta_negativa_identificacao
   - action: utter_final
@@ -198,8 +252,9 @@ stories:
   - action: utter_reclamacoes
   - intent: erro_portugues
   - action: utter_erro_portugues
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: deny
   - action: utter_resposta_negativa_identificacao
   - action: utter_final
@@ -210,8 +265,9 @@ stories:
   - action: utter_reclamacoes
   - intent: problemas_tecnicos
   - action: utter_problemas_tecnicos
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: deny
   - action: utter_resposta_negativa_identificacao
   - action: utter_final
@@ -222,8 +278,9 @@ stories:
   - action: utter_reclamacoes
   - intent: outro_motivo
   - action: utter_outro_motivo
-  # - action: action_input_text
-  - action: utter_agradecimentos
+  - intent: input_text_mensagem
+  - action: action_input_text_mensagem
+  - action: utter_identificacao
   - intent: deny
   - action: utter_resposta_negativa_identificacao
   - action: utter_final

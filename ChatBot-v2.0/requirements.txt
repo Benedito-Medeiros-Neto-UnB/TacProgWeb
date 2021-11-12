@@ -1,5 +1,5 @@
-rasa
-nltk
-elasticsearch
-flake8
-numpy
+rasa==2.8.12
+nltk==3.6.3
+elasticsearch==7.15.2
+flake8==4.0.1
+numpy==1.19.5
