@@ -1,4 +1,6 @@
 version: '2.0'
+
+
 config:
   store_entities_as_slots: true
 session_config:
@@ -49,8 +51,18 @@ intents:
     use_entities: true
 - nlu_fallback:
     use_entities: true
+- input_text_mensagem:
+    use_entities: true
+- input_text_contato:
+    use_entities: true
+- input_text_identificacao:
+    use_entities: true
 entities: []
-slots: {}
+
+slots: 
+    name:
+        type: text
+
 responses:
   utter_greet:
   - text: |
@@ -129,23 +141,34 @@ responses:
   - text: Nós sentimos sinceramente por quaisquer erros que cometemos. Para podermos nos redimir, fale mais sobre sua reclamação.
   utter_agradecimentos:
   - text: |
-      Muito obrigado pelas informações, você gostaria de se identificar para acompanhar sua solicitação?
-      - Sim
-      - Não
+      Muito obrigado pelas informações.
   utter_feedback_completo:
   - text: Guardando informação...
   utter_resp:
   - text: Descreva sua sugestão que iremos responder quando possível. Por favor, fale sobre o assunto e insira imagens ou vídeos para ilustrar melhor a pauta. Não se esqueça de nos dizer se podemos reproduzir esse conteúdo.
   utter_final:
   - text: Se puder te ajudar em algo mais, só me chamar.
+
+  utter_identificacao:
+  - text: Gostaria de ser identificado?
+
   utter_pergunta_identificacao:
   - text: Qual é o seu nome?
   utter_pergunta_contato:
   - text: Qual é o seu contato?
   utter_resposta_positiva_identificacao:
-  - text: Obrigado, suas mensagens foram salvas!
+  - text: Obrigado, sua identificação foi salva!
   utter_resposta_negativa_identificacao:
-  - text: Sem problemas, suas mensagens foram salvas!
-actions: []
+  - text: Sem problemas, sua identificação não foi salva!
+  utter_resposta_positiva_contato:
+  - text: Obrigado, seu contato foi salvo!
+  utter_resposta_negativa_contato:
+  - text: Sem problemas, seu contato não foi salvo!
+  
+actions: 
+- action_input_text_mensagem
+- action_input_text_identificacao
+- action_input_text_contato
+
 forms: {}
 e2e_actions: []

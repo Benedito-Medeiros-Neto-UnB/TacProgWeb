@@ -109,6 +109,9 @@ nlu:
     - vc é humano?
     - eu estou falando com um bot?
     - eu estou falando com um humano?
+    - vc e um bot?
+    - quem e vc?
+    - quem é vc?
 
 - intent: pauta
   examples: |
@@ -212,8 +215,9 @@ nlu:
   examples: |
     - identificar
     - me indentificar
-    - indentifico
-    - indentidade
+    - identifico
+    - identidade
+    - identificado
 
 - intent: volta_servico
   examples: |
@@ -225,4 +229,48 @@ nlu:
     - gostaria de saber quando volta
     - volta do servico
     - volta do atendimento
+
   
+- intent: input_text_mensagem
+  examples: |
+    - www.google.com
+    - entrada teste
+    - entrada
+    - mensagem 1
+    - mensagem 2
+    - mensagem 3
+    - exemplo 1
+    - exemplo 2
+    - exemplo 3
+  
+- intent: input_text_identificacao
+  examples: |
+    - fulano
+    - beltrano
+    - ciclano
+    - ronald
+    - alexandre
+    - manuela
+    - benedito
+    - edson
+    - zanei
+    - Ronald
+    - Alexandre
+    - Manuela
+    - Benedito
+    - Edison
+    - Zanei
+
+- intent: input_text_contato
+  examples: |
+    - (61)91111-1111
+    - (61)98764-9087
+    - (61)98546-2436
+    - (21)98346-4444
+    - (41)98446-6869
+    - (98)98802-4025
+    - (62)98546-2436
+    - (61)98346-2430
+    - (11)98542-2436
+    - (99)99825-4469
+    - (77)98846-2436  
