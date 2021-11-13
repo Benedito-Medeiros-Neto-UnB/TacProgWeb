@@ -23,3 +23,4 @@ https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 Os artefatos, presentes neste repositório, são produto da disciplina de Tópicos Avançados em Computadores(TAC), da Universidade de Brasilia(UnB), e estam licenciados nos termos da licença MIT, dessa forma, é permitido utilizar, copiar, modificar, mesclar, publicar, distribuir e vender copias de parte do repositório ou integralmente, desde de que mantenha o aviso de copyright e uma cópia da licença em todas as cópias do software.
 
 Os artefatos são distribuídos sem garantia, autores e licença não podem ser responsabilizados por possíveis perdas ou danos pelo uso do software.
+

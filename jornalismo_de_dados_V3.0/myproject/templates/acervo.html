@@ -1,0 +1,142 @@
+{% load cms_tags menu_tags sekizai_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{% page_attribute "page_title" %}</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  {% render_block "css" %}
+</head>
+
+<body>
+  {% cms_toolbar %}
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">WikiJour</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          {% show_menu 0 100 100 100 %}  
+          <li class="drop-down"><a>Navegação</a>
+            <ul>
+              <li><a href="#acervoWanessa">Wanessa</a></li>
+              <li><a href="#acervoDaumido">Daumildo</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div class="container" data-aos="zoom-out" data-aos-delay="100">
+      <h1><span>Acervo</span>
+      </h1>
+      <h2>Aqui temos dispónivel os Acervos</h2>
+      <div class="d-flex">
+        <a href="#featured-services" class="btn-get-started scrollto">Vamos começar!</a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <section id="featured-services" class="featured-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Acervo desenvolvido pelos alunos, Wanessa e Daumildo.</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 pt-4 pt-lg-0 content d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+              <h3 id="acervoWanessa">Resenha: Jornalismo de dados, Wanessa.</h3>
+              <p>A tese de graduação escrita pela jornalista Larissa de Jesus Silva, Jornalismo de dados:
+conceitos, fluxos, ferramentas e formação acadêmica, no primeiro capítulo, descreve com
+riqueza de detalhes como o jornalismo de dados foi se desenvolvendo até os dias de hoje,
+tornando-se, nos últimos anos, bastante popular, ainda que sem muitos estudos e
+aprofundamento nos cursos de ensino superior da área.
+              </p>
+              <p>Apesar de parecer que o jornalismo guiado por dados (JGD), sinônimo assumido pela
+autora para jornalismo de dados, que surgiu a pouco tempo, a história vem de meados do
+século XX. Philip Meyer, jornalista atuante durante a década de 60, apresentou o Jornalismo
+de precisão. Esse tipo de produção de notícias foi utilizado pelo jornalista em 1967, ao
+escrever a reportagem The People Beyond 12th Street. O método utilizava o computador da
+época para analisar com maior precisão os dados e transformá-los em informações.</p> 
+              <p>
+              Com o passar dos anos e, principalmente, com o avanço das tecnologias computacionais, o
+acesso e a criação de banco de dados se tornou mais acessível. Embora a primeira
+reportagem seja escrita com base nos dados coletados e organizados por meio de um
+computador, não se sabe quando ao certo o jornalismo chegou nas redações.
+              </p>
+              <p>Mesmo anos após o uso dessa metodologia para a elaboração e escrita de matérias
+jornalísticas, inúmeras redações ainda não investem na capacitação dos profissionais e
+muito menos na infraestrutura das redações, a fim de começar a se adequar às novas
+demandas do mercado de notícias, isso porque as empresas não seguiram o mesmo ritmo
+de trabalho e inovação.</p>
+              <img src="{% static 'assets/wanessaMapa.png' %}" alt="Foto do mapa Wanessa" style="width: 30rem"> 
+              <span>Mapa mental desenvolvido: Wanessa.</span>
+
+              <h3 id="acervoDaumido">Resenha: Jornalismo de dados, Daumildo.</h3>
+              <img src="{% static 'assets/daumildoMapa.png' %}" alt="Mapa do Daumildo" style="width: 30rem;">
+              <span>Mapa mental desenvolvido: Daumildo.</span>
+    </section><!-- End About Section -->
+
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about section-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Referências</h2>
+          <p>SILVA, Larissa de Jesus. Jornalismo de dados: conceitos, fluxos, ferramentas e formação
+          acadêmica. 2019. pág. 13 a 24. Disponível em: <a href="http://www.filosofiacienciaarte.org/attachments/article/1134/TCC%20-%208.0%20com%20a
+nexo%20(23_12_2020).pdf">aqui.</a></p>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"> </script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js' %}"> </script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
