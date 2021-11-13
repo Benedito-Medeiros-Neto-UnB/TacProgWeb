@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load fontawesome_5 %}
+
+{% block content %}
+
+<div class="news-form">
+    <p> <a class="back-link" href="{% url 'noticia_list' %}">{% fa5_icon 'chevron-left' 'fas' %} Voltar</a> </p>
+    <form method="post">
+        {% csrf_token %}
+
+        {{imagem_form.noticia}}
+
+        <h3 class="link-tip"> Link da Imagem </h3>
+        {{ imagem_form.link_foto_long_form }}
+        <div class="error">{{ imagem_form.link_foto_long_form.errors }}</div>
+
+        <h3 class="link-tip"> Autoria da Imagem </h3>
+        {{ imagem_form.autoria_midia_imagem }}
+        <div class="error">{{ imagem_form.autoria_midia_imagem.errors }}</div>
+
+        <button class="link" type="submit">Publicar</button>
+        
+    </form>
+
+    <h3>Prévia da Notícia:</h3>
+</div>
+
+{% endblock %}

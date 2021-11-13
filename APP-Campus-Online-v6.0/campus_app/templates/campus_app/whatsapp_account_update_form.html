@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load fontawesome_5 %}
+{% load static %}
+
+{% block content %}
+  <div class="news-form">
+    <center><h1>Atualização de número do WhatsApp</h1></center>
+    <p> <a class="back-link" href="{% url 'whatsapp_account_list' %}">{% fa5_icon 'chevron-left' 'fas' %} Voltar</a> </p>
+    <form method="post">
+      {% csrf_token %}
+      {{ form.non_field_errors }}
+      {% for field in form %}
+        <div>
+          {{ field.label_tag }}
+          {{ field }}
+          {{ field.errors }}
+        </div>
+        <br>
+      {% endfor %}
+      <button class="link" type="submit" value="Salvar" id="id_save_btn">Salvar</button>
+      <a class="link-outline" href="{% url 'whatsapp_account_delete_confirmation' whatsappaccount.cod %}">Remover</a>
+      </ul>
+    </form>
+  </div>
+  <div class="endPage"></div>
+{% endblock %}

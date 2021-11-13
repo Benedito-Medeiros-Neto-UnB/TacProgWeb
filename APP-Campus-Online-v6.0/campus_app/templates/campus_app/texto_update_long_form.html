@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load fontawesome_5 %}
+
+{% block content %}
+
+<div class="news-form">
+    <p> <a class="back-link" href="{% url 'noticia_list' %}">{% fa5_icon 'chevron-left' 'fas' %} Voltar</a> </p>
+    <form method="post">
+        {% csrf_token %}
+
+        {{ texto_form.noticia }}
+
+        <h3 class="link-tip">Subtitulo</h3>
+        {{ texto_form.subtitulo}}
+        <div class="error">{{ texto_form.subtitulo.errors }}</div>
+
+        <h3 class="link-tip">Texto da Materia</h3>
+        {{ texto_form.texto_materia }}
+        <div class="error">{{ texto_form.texto_materia.errors }}</div>
+
+        <button class="link" type="submit">Publicar</button>
+        
+    </form>
+
+</div>
+
+{% endblock %}
